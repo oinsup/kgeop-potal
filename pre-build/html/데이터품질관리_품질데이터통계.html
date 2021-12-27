@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_데이터품질관리.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_데이터품질관리.html')
+        <!--content-->
+        <div id="content">
+            <h3 class="titPage">품질데이터 통계</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">데이터 품질관리</a></div>
+                <div class="menuName"><a href="/">품질데이터 통계</a></div>
+            </div>
+
+            <div class="tabContWrap type02">
+                <div class="tabNav">
+                    <ul class="tabList">
+                        <li class="active"><a href="#">오류내역</a></li>
+                        <li><a href="#">통계</a></li>
+                    </ul>
+                </div>
+                <div class="tabCont active">
+                    <!--searchBox-->
+                    <div class="searchBox newType">
+                        <div class="inner">
+                            <!--row-->
+                            <div class="row">
+                                <!--inputBox-->
+                                <div class="inputBox">
+                                    <label for="ib01">기관구분</label>
+                                    <select id="ib01">
+                                        <option value="지자체" selected>지자체</option>
+                                    </select>
+                                </div>
+                                <!--//inputBox-->
+                                <!--inputBox-->
+                                <div class="inputBox">
+                                    <label for="ib02">행정구역</label>
+                                    <div class="flex">
+                                        <select id="ib02">
+                                            <option value="서울시" selected>서울시</option>
+                                        </select>
+                                        <select>
+                                            <option value="강남구" selected>강남구</option>
+                                        </select>
+                                        <select>
+                                            <option value="선택" selected>선택</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--//inputBox-->
+                            </div>
+                            <!--//row-->
+                            <!--row-->
+                            <div class="row">
+                                <!--inputBox-->
+                                <div class="inputBox">
+                                    <label for="ib03">연계여부</label>
+                                    <select id="ib03">
+                                        <option value="전체" selected>전체</option>
+                                    </select>
+                                </div>
+                                <!--//inputBox-->
+                                <!--inputBox-->
+                                <div class="inputBox">
+                                    <label for="ib04">업무구분</label>
+                                    <select id="ib04">
+                                        <option value="전체" selected>전체</option>
+                                    </select>
+                                </div>
+                                <!--//inputBox-->
+                            </div>
+                            <!--//row-->
+                            <!--row-->
+                            <div class="row">
+                                <!--inputBox-->
+                                <div class="inputBox">
+                                    <label for="ib05">오류유형</label>
+                                    <select id="ib05">
+                                        <option value="전체" selected>전체</option>
+                                    </select>
+                                </div>
+                                <!--//inputBox-->
+                                <!--inputBox-->
+                                <div class="inputBox">
+                                    <label for="ib07">신청월</label>
+                                    <div class="flex">
+                                        <select id="ib07">
+                                            <option value="2021년" selected>2021년</option>
+                                        </select>
+                                        <select>
+                                            <option value="6월" selected>6월</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--//inputBox-->
+                            </div>
+                            <!--//row-->
+                            <div class="btnArea new">
+                                <button type="button" class="btn grey w150"><span>초기화</span></button>
+                                <button type="button" class="btn black w150"><span>검색</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//searchBox-->
+                </div>
+                <div class="tabCont"></div>
+
+            </div>
+            <!--titleArea-->
+            <div class="titleArea clearFix">
+                <p class="titMeta">전체</p>
+                <div class="meta">
+                    <div class="col"><em>10</em><span>건</span></div>
+                </div>
+                <button type="button" class="btn line sm" style="margin-left: auto;"><i class="ico excel lt"></i><span>엑셀 다운로드</span></button>
+            </div>
+            <!--//titleArea-->
+
+            <!--table-->
+            <div class="table hover">
+                <table>
+                    <caption>공지사항 목록</caption>
+                    <colgroup>
+                        <col style="width:117px;"/>
+                        <col style="width:134px;"/>
+                        <col style="width:142px;"/>
+                        <col style="width:auto"/>
+                        <col style="width:94px;"/>
+                        <col style="width:320px;"/>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">업무구분</th>
+                        <th scope="col">오류유형</th>
+                        <th scope="col">테이블명</th>
+                        <th scope="col">고유번호</th>
+                        <th scope="col">순번</th>
+                        <th scope="col">주소</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>지적정보</td>
+                        <td>필수항목</td>
+                        <td>공유지연명부</td>
+                        <td>11111-11111-1-1111-0001</td>
+                        <td>0000</td>
+                        <td>세종특별자치시 고운동 0030-0001</td>
+                    </tr>
+                    <tr>
+                        <td>지적정보</td>
+                        <td>필수항목</td>
+                        <td>공유지연명부</td>
+                        <td>11111-11111-1-1111-0001</td>
+                        <td>0000</td>
+                        <td>세종특별자치시 고운동 0030-0001</td>
+                    </tr>
+                    <tr>
+                        <td>지적정보</td>
+                        <td>필수항목</td>
+                        <td>공유지연명부</td>
+                        <td>11111-11111-1-1111-0001</td>
+                        <td>0000</td>
+                        <td>세종특별자치시 고운동 0030-0001</td>
+                    </tr>
+                    <tr>
+                        <td>지적정보</td>
+                        <td>필수항목</td>
+                        <td>공유지연명부</td>
+                        <td>11111-11111-1-1111-0001</td>
+                        <td>0000</td>
+                        <td>세종특별자치시 고운동 0030-0001</td>
+                    </tr>
+                    <tr>
+                        <td>지적정보</td>
+                        <td>필수항목</td>
+                        <td>공유지연명부</td>
+                        <td>11111-11111-1-1111-0001</td>
+                        <td>0000</td>
+                        <td>세종특별자치시 고운동 0030-0001</td>
+                    </tr>
+                    <tr>
+                        <td>지적정보</td>
+                        <td>필수항목</td>
+                        <td>공유지연명부</td>
+                        <td>11111-11111-1-1111-0001</td>
+                        <td>0000</td>
+                        <td>세종특별자치시 고운동 0030-0001</td>
+                    </tr>
+                    <tr>
+                        <td>지적정보</td>
+                        <td>필수항목</td>
+                        <td>공유지연명부</td>
+                        <td>11111-11111-1-1111-0001</td>
+                        <td>0000</td>
+                        <td>세종특별자치시 고운동 0030-0001</td>
+                    </tr>
+                    <tr>
+                        <td>지적정보</td>
+                        <td>필수항목</td>
+                        <td>공유지연명부</td>
+                        <td>11111-11111-1-1111-0001</td>
+                        <td>0000</td>
+                        <td>세종특별자치시 고운동 0030-0001</td>
+                    </tr>
+                    <tr>
+                        <td>지적정보</td>
+                        <td>필수항목</td>
+                        <td>공유지연명부</td>
+                        <td>11111-11111-1-1111-0001</td>
+                        <td>0000</td>
+                        <td>세종특별자치시 고운동 0030-0001</td>
+                    </tr>
+                    <tr>
+                        <td>지적정보</td>
+                        <td>필수항목</td>
+                        <td>공유지연명부</td>
+                        <td>11111-11111-1-1111-0001</td>
+                        <td>0000</td>
+                        <td>세종특별자치시 고운동 0030-0001</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//table-->
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+    @@include('include/footer.html')
+</div>
+<!--//wrap-->
+
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_고객지원.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_사용자관리.html')
+        <!--content-->
+        <div id="content">
+            <h3 class="titPage">사용자 관리 상세</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+
+            <!--clearFix-->
+            <div class="adRequest clearFix">
+                <!--box-->
+                <div class="box">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <h4 class="titSub">요청상태</h4>
+                    </div>
+                    <!--//titleArea-->
+                    <!--table-->
+                    <div class="table">
+                        <table>
+                            <caption class="hidden">요청상태</caption>
+                            <colgroup>
+                                <col style="width:150px;" />
+                                <col style="width:367px" />
+                                <col style="width:150px" />
+                                <col style="" />
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th class="row">아이디</th>
+                                <td class="txtLeft">Aaa</td>
+                                <th class="row">사용자명</th>
+                                <td class="txtLeft">홍길동</td>
+                            </tr>
+                            <tr>
+                                <th class="row">비밀번호</th>
+                                <td class="txtLeft">
+                                    <button type="button" class="init lightGray pw">비밀번호 초기화</button>
+                                </td>
+                                <th class="row">생년월일</th>
+                                <td class="txtLeft">1984-01-09</td>
+                            </tr>
+                            <tr>
+                                <th class="row">사용자구분</th>
+                                <td class="txtLeft">본부</td>
+                                <th class="row">근무소재지</th>
+                                <td class="txtLeft">국토교통부</td>
+                            </tr>
+                            <tr>
+                                <th class="row">휴대폰 번호</th>
+                                <td class="txtLeft">010-1234-5678</td>
+                                <th class="row">행정 전화번호</th>
+                                <td class="txtLeft">02-1234-5678</td>
+                            </tr>
+                            <tr>
+                                <th class="row">등록일자</th>
+                                <td class="txtLeft">2020-07-07
+                                    <button type="button" class="init lightGray">인증키 삭제</button></td>
+                                <th class="row">최종접속일자</th>
+                                <td class="txtLeft">2020-07-07<button type="button" class="init lightGray">초기화</button></td>
+                            </tr>
+                            <tr>
+                                <th class="row">인증서 등록 여부</th>
+                                <td colspan="3" class="txtLeft">등록</td>
+                            </tr>
+                            <tr>
+                                <th class="row">사용승인 여부</th>
+                                <td colspan="3" class="txtLeft">사용제한(비밀번호 오류 횟수 초과)
+                                    <button type="button" class="init lightGray">초기화</button></td>
+                            </tr>
+                            <tr>
+                                <th class="row">담당업무 및 사용목적</th>
+                                <td colspan="3" class="txtLeft">부동산정보과 관리자 업무 수행</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </div>
+                <!--//box-->
+                <!--box-->
+                <div class="box clearFix">
+                    <!--half-->
+                    <div class="half">
+                        <!--titleArea-->
+                        <div class="titleArea clearFix">
+                            <h4 class="titSub">사용자 권한</h4>
+                        </div>
+                        <!--//titleArea-->
+                        <!--table-->
+                        <div class="table hover">
+                            <table>
+                                <caption>사용자 권한</caption>
+                                <colgroup>
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col style="width:auto">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">제 목</th>
+                                    <th scope="col">내 용</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">분야</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!--//table-->
+
+                    </div>
+                    <!--//half-->
+                    <!--half-->
+                    <div class="half">
+                        <!--titleArea-->
+                        <div class="titleArea clearFix">
+                            <h4 class="titSub">지역 권한</h4>
+                        </div>
+                        <!--//titleArea-->
+                        <!--table-->
+                        <div class="table hover">
+                            <table>
+                                <caption>지역 권한/caption>
+                                <colgroup>
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col style="width:auto">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">제 목</th>
+                                    <th scope="col">내 용</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">분야</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!--//table-->
+                    </div>
+                    <!--//half-->
+
+                </div>
+                <!--//box-->
+                <!--box-->
+                <div class="box clearFix">
+                    <!--half-->
+                    <div class="half">
+                        <!--titleArea-->
+                        <div class="titleArea clearFix">
+                            <h4 class="titSub">요청한 권한 대행 목록</h4>
+                        </div>
+                        <!--//titleArea-->
+                        <div class="table hover">
+                            <table>
+                                <caption>요청한 권한 대행 목록</caption>
+                                <colgroup>
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col style="width:auto">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">제 목</th>
+                                    <th scope="col">내 용</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">분야</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="pagination">
+                            <a href="/" class="active">1</a>
+                            <a href="/">2</a>
+                            <a href="/">3</a>
+                            <a href="/">4</a>
+                            <a href="/">5</a>
+                        </div>
+                    </div>
+                    <!--//half-->
+                    <!--half-->
+                    <div class="half">
+                        <!--titleArea-->
+                        <div class="titleArea clearFix">
+                            <h4 class="titSub">요청받은 권한 대행 목록</h4>
+                        </div>
+                        <!--//titleArea-->
+
+                        <div class="table hover">
+                            <table>
+                                <caption>요청받은 권한 대행 목록</caption>
+                                <colgroup>
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col style="width:auto">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">제 목</th>
+                                    <th scope="col">내 용</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">분야</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                    <td>
+                                        내용
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="pagination">
+                            <a href="/" class="active">1</a>
+                            <a href="/">2</a>
+                            <a href="/">3</a>
+                            <a href="/">4</a>
+                            <a href="/">5</a>
+                        </div>
+                    </div>
+                    <!--//half-->
+
+                </div>
+                <!--//box-->
+
+                <div class="btnArea">
+                    <div class="left">
+                        <button type="button" class="blueType">사용자 권한 설정</button>
+                        <button type="button" class="lightGreenType">지역 권한 설정</button>
+                    </div>
+                    <div class="right">
+                        <button type="button" class="lightGreyType">수정</button>
+                        <button type="button" class="blueType">목록</button>
+                    </div>
+
+                </div>
+            </div>
+            <!--//clearFix-->
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+    @@include('include/footer.html')
+</div>
+<!--//wrap-->
+</body>
+</html>

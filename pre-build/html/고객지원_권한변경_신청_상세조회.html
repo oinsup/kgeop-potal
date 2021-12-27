@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_고객지원.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_고객지원.html')
+        <!--content-->
+        <div id="content">
+            <h3 class="titPage">권한변경 신청 상세조회</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+
+            <!--clearFix-->
+            <div class="adRequest clearFix">
+                <!--box-->
+                <div class="box">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <h4 class="titSub">등록구분</h4>
+                    </div>
+                    <!--//titleArea-->
+                    <!--table-->
+                    <div class="table">
+                        <table>
+                            <caption class="hidden">등록구분</caption>
+                            <colgroup>
+                                <col style="width:163px;" />
+                                <col style="width:178px" />
+                                <col style="width:163px" />
+                                <col style="width:178px" />
+                                <col style="width:163px" />
+                                <col style="width:auto" />
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th class="row">권한신청 상태</th>
+                                <td class="txtLeft">미승인</td>
+                                <th class="row">신청일</th>
+                                <td class="txtLeft">2020-07-07</td>
+                                <th class="row">처리일</th>
+                                <td class="txtLeft">2020-07-08</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </div>
+                <!--//box-->
+                <!--box-->
+                <div class="box">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <h4 class="titSub">사용자 정보</h4>
+                    </div>
+                    <!--//titleArea-->
+                    <!--table-->
+                    <div class="table">
+                        <table>
+                            <caption class="hidden">사용자 정보</caption>
+                            <colgroup>
+                                <col style="width:163px;" />
+                                <col style="width:357px" />
+                                <col style="width:163px" />
+                                <col style="width:auto" />
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th class="row">아이디</th>
+                                <td class="txtLeft">user0123</td>
+                                <th class="row">이름</th>
+                                <td class="txtLeft">홍길동</td>
+                            </tr>
+                            <tr>
+                                <th class="row">생년월일</th>
+                                <td class="txtLeft">
+                                    <button type="button" class="greyLine">비밀번호 초기화</button>
+                                </td>
+                                <th class="row">기관</th>
+                                <td class="txtLeft">1984-01-09</td>
+                            </tr>
+                            <tr>
+                                <th class="row">휴대폰번호</th>
+                                <td class="txtLeft">010-1234-5678</td>
+                                <th class="row">행정전화번호</th>
+                                <td class="txtLeft">02-1234-5678</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </div>
+                <!--//box-->
+                <!--box-->
+                <div class="box">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <h4 class="titSub">권한부여 대상업무</h4>
+                    </div>
+                    <!--//titleArea-->
+                    <!--table-->
+                    <div class="table">
+                        <table>
+                            <caption class="hidden">권한부여 대상업무</caption>
+                            <colgroup>
+                                <col style="width:163px;" />
+                                <col style="width:auto" />
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th class="row">신청권한</th>
+                                <td class="txtLeft">KLIS 시군구 부동산정보, KLIS 시군구 공인중개사, KLIS 시군구 부동산개발업</td>
+                            </tr>
+                            <tr>
+                                <th class="row">신청권한 사유 및<br/>대상 업무</th>
+                                <td class="txtLeft">부동산 개발업 업무수행에 따른 KLIS 시군구 부동산개발업 권한 필요</td>
+                            </tr>
+                            <tr>
+                                <th class="row">기타</th>
+                                <td class="txtLeft"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </div>
+                <!--//box-->
+                <div class="btnArea search">
+                    <div class="left">
+                        <button type="button" class="greyType">승인</button>
+                        <button type="button" class="blueType">반려</button>
+                    </div>
+                    <div class="right">
+                        <button type="button" class="blueType">목록</button>
+                    </div>
+
+                </div>
+            </div>
+            <!--//clearFix-->
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+    @@include('include/footer.html')
+</div>
+<!--//wrap-->
+</body>
+</html>

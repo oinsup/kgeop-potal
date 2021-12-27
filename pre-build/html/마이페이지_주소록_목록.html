@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_마이페이지.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_마이페이지.html')
+        <!--content-->
+        <div id="content">
+            <h3 class="titPage">주소록 목록</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+
+            <div class="searchBox type2 clearFix">
+
+                <div class="col">
+                    <label for="input01">주소록명</label>
+                    <input type="text" id="input01" style="width:157px;">
+                </div>
+                <div class="col">
+                    <div class="btnSearch fixed">
+                        <button type="button">검색</button>
+                    </div>
+                </div>
+            </div>
+            <div class="titleArea clearFix">
+                <p class="titMeta">전체</p>
+                <div class="meta">
+                    <div class="col"><em>10</em><span>건</span></div>
+                </div>
+            </div>
+
+            <!--table-->
+            <div class="table">
+                <table>
+                    <colgroup>
+                        <col style="width:90px;">
+                        <col style="width:90px;">
+                        <col style="width:*">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkTbl_all">
+                                <label for="checkTbl_all"></label>
+                            </div>
+                        </th>
+                        <th scope="col">번호</th>
+                        <th scope="col">내용</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkTbl_01">
+                                <label for="checkTbl_01"></label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkTbl_02">
+                                <label for="checkTbl_02"></label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkTbl_03">
+                                <label for="checkTbl_02"></label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkTbl_04">
+                                <label for="checkTbl_02"></label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkTbl_05">
+                                <label for="checkTbl_02"></label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkTbl_06">
+                                <label for="checkTbl_02"></label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkTbl_07">
+                                <label for="checkTbl_02"></label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkTbl_08">
+                                <label for="checkTbl_02"></label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkTbl_09">
+                                <label for="checkTbl_02"></label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkTbl_10">
+                                <label for="checkTbl_02"></label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//table-->
+
+            <!--pageBtn-->
+            <div class="pageBtn">
+                <!--pagination-->
+                <div class="pagination">
+                    <button type="button" class="btnFirst"><span class="hidden">처음으로</span></button>
+                    <button type="button" class="btnPrev"><span class="hidden">이전</span></button>
+                    <a href="/" class="active">1</a>
+                    <a href="/">2</a>
+                    <a href="/">3</a>
+                    <a href="/">4</a>
+                    <a href="/">5</a>
+                    <a href="/">6</a>
+                    <a href="/">7</a>
+                    <a href="/">8</a>
+                    <a href="/">9</a>
+                    <a href="/">10</a>
+                    <button type="button" class="btnNext"><span class="hidden">다음</span></button>
+                    <button type="button" class="btnLast"><span class="hidden">마지막으로</span></button>
+                </div>
+                <!--pagination-->
+
+            </div>
+            <!--//pageBtn-->
+
+            <div class="btnArea txtRight">
+                <a href="#" class="button default lightGreyType">선택 삭제</a>
+                <button type="button" class="button default blueType">추가</button>
+            </div>
+
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+    @@include('include/footer.html')
+</div>
+<!--//wrap-->
+
+
+<!--popup-->
+<div class="popup" style="width:500px;left:689px;top:200px">
+    <!--popupHeader-->
+    <div class="popupHeader">
+        <h3>주소록 등록</h3>
+        <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+    </div>
+    <!--//popupHeader-->
+    <!--popupMain-->
+    <div class="popupMain">
+
+        <!--popupPd-->
+        <div class="popupPd">
+            <!--table-->
+            <div class="table">
+                <table>
+                    <caption>주소록 등록</caption>
+                    <colgroup>
+                        <col style="width:150px;">
+                        <col style="width:auto">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row"><label for="address01"><span class="redDot"></span>주소록명</label></th>
+                        <td><input type="text" id="address01"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="address02">주소록 설명</label></th>
+                        <td><input type="text" id="address02"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//table-->
+
+            <div class="btnArea">
+                <button type="button" class="default space-between lightGreyType">취소</button>
+                <button type="button" class="default space-between blueType">등록</button>
+            </div>
+
+
+        </div>
+        <!--//popupPd-->
+    </div>
+    <!--//popupMain-->
+</div>
+<!--//popup-->
+
+
+</body>
+</html>

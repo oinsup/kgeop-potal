@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_고객지원.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_고객지원.html')
+        <!--content-->
+        <div id="content">
+            <h3 class="titPage">신청목록 / 다운조회</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+
+            <!--tabContWrap-->
+            <div class="tabContWrap type3">
+                <!--tabNav-->
+                <div class="tabNav">
+                    <ul class="tabList col2 clearFix">
+                        <li class="active">
+                            <a href="#">신청 / 다운 목록</a>
+                        </li>
+                        <li>
+                            <a href="#">정기 다운로드</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--//tabNav-->
+                <!--tabCont-->
+                <div class="tabCont active">
+
+                    <!--searchBox-->
+                    <div class="searchBox type4 clearFix">
+                        <div class="col">
+                            <label for="ss01">데이터유형</label>
+                            <select id="ss01" style="width:261px;">
+                                <option selected>선택</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="ss02">진행상태</label>
+                            <select id="ss02" style="width:261px;">
+                                <option selected>선택</option>
+                            </select>
+                        </div>
+                        <div class="col dateType">
+                            <label for="ss04">등록일시</label>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check01" class="hidden"/>
+                                <label for="check01"></label>
+                            </div>
+                            <input type="text" id="ss04" class="cal" style="width:132px"/><span>~</span>
+                            <input type="text"   class="cal" style="width:132px"/>
+                        </div>
+
+                        <div class="btnSearch fixed">
+                            <button type="button">검색</button>
+                        </div>
+                    </div>
+                    <!--//searchBox-->
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <p class="titMeta">신청목록</p>
+                        <div class="meta">
+                            <div class="col"><em>2,145</em><span>건</span></div>
+                        </div>
+                    </div>
+                    <!--//titleArea-->
+
+                    <!--table-->
+                    <div class="table hover">
+                        <table>
+                            <caption>공지사항 목록</caption>
+                            <colgroup>
+                                <col style="width:85px;">
+                                <col style="width:118px;">
+                                <col style="width:135px;">
+                                <col style="width:84px;">
+                                <col style="width:90px;">
+                                <col style="width:82px;">
+                                <col style="width:78px;">
+                                <col style="width:85px;">
+                                <col style="width:85px;">
+                                <col style="width:105px">
+                                <col style="width:auto">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">신청일자</th>
+                                <th scope="col">데이터명</th>
+                                <th scope="col">범위</th>
+                                <th scope="col">자료유형</th>
+                                <th scope="col">데이터유형</th>
+                                <th scope="col">개인정보 포함</th>
+                                <th scope="col">진행상태</th>
+                                <th scope="col">갱신일자</th>
+                                <th scope="col">만료일자</th>
+                                <th scope="col">다운로드</th>
+                                <th scope="col">취소</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2020.06.11</td>
+                                <td>토지(임야)기본</td>
+                                <td>서울특별시 은평구</td>
+                                <td>일반자료</td>
+                                <td>속성</td>
+                                <td>N</td>
+                                <td><span class="txtBlue bold">승인</span></td>
+                                <td>2020.06.11</td>
+                                <td>2020.06.11</td>
+                                <td><button type="button" class="btnDownload"><span>다운로드</span></button></td>
+                                <td><button type="button" class="btnCancel"><span>활용취소</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>2020.06.11</td>
+                                <td>토지(임야)기본</td>
+                                <td>서울특별시 은평구</td>
+                                <td>일반자료</td>
+                                <td>속성</td>
+                                <td><span class="txtRed">N</span></td>
+                                <td><span class="txtRed bold">반려</span></td>
+                                <td>2020.06.11</td>
+                                <td>2020.06.11</td>
+                                <td><button type="button" class="btnReturn"><span>반려사유</span></button></td>
+                                <td><button type="button" class="btnCancel"><span>활용취소</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>2020.06.11</td>
+                                <td>토지(임야)기본</td>
+                                <td>서울특별시 은평구</td>
+                                <td>일반자료</td>
+                                <td>속성</td>
+                                <td><span class="txtBlue">N</span></td>
+                                <td><span class="txtBlue bold">승인</span></td>
+                                <td>2020.06.11</td>
+                                <td>2020.06.11</td>
+                                <td><button type="button" class="btnDownload"><span>다운로드</span></button></td>
+                                <td><button type="button" class="btnCancel"><span>활용취소</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>2020.06.11</td>
+                                <td>토지(임야)기본</td>
+                                <td>서울특별시 은평구</td>
+                                <td>일반자료</td>
+                                <td>속성</td>
+                                <td>N</td>
+                                <td><span class="txtBlue bold">승인</span></td>
+                                <td>2020.06.11</td>
+                                <td>2020.06.11</td>
+                                <td><button type="button" class="btnReturn"><span>반려사유</span></button></td>
+                                <td><button type="button" class="btnCancel"><span>활용취소</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>2020.06.11</td>
+                                <td>토지(임야)기본</td>
+                                <td>서울특별시 은평구</td>
+                                <td>일반자료</td>
+                                <td>속성</td>
+                                <td>N</td>
+                                <td><span class="txtBlue bold">승인</span></td>
+                                <td>2020.06.11</td>
+                                <td>2020.06.11</td>
+                                <td><button type="button" class="btnDownload"><span>다운로드</span></button></td>
+                                <td><button type="button" class="btnCancel"><span>활용취소</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>2020.06.11</td>
+                                <td>토지(임야)기본</td>
+                                <td>서울특별시 은평구</td>
+                                <td>일반자료</td>
+                                <td>속성</td>
+                                <td>N</td>
+                                <td><span class="txtBlue bold">승인</span></td>
+                                <td>2020.06.11</td>
+                                <td>2020.06.11</td>
+                                <td><button type="button" class="btnReturn"><span>반려사유</span></button></td>
+                                <td><button type="button" class="btnCancel"><span>활용취소</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>2020.06.11</td>
+                                <td>토지(임야)기본</td>
+                                <td>서울특별시 은평구</td>
+                                <td>일반자료</td>
+                                <td>속성</td>
+                                <td>N</td>
+                                <td><span class="txtBlue bold">승인</span></td>
+                                <td>2020.06.11</td>
+                                <td>2020.06.11</td>
+                                <td><button type="button" class="btnDownload"><span>다운로드</span></button></td>
+                                <td><button type="button" class="btnCancel"><span>활용취소</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>2020.06.11</td>
+                                <td>토지(임야)기본</td>
+                                <td>서울특별시 은평구</td>
+                                <td>일반자료</td>
+                                <td>속성</td>
+                                <td>N</td>
+                                <td><span class="txtBlue bold">승인</span></td>
+                                <td>2020.06.11</td>
+                                <td>2020.06.11</td>
+                                <td><button type="button" class="btnReturn"><span>반려사유</span></button></td>
+                                <td><button type="button" class="btnCancel"><span>활용취소</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>2020.06.11</td>
+                                <td>토지(임야)기본</td>
+                                <td>서울특별시 은평구</td>
+                                <td>일반자료</td>
+                                <td>속성</td>
+                                <td>N</td>
+                                <td><span class="txtBlue bold">승인</span></td>
+                                <td>2020.06.11</td>
+                                <td>2020.06.11</td>
+                                <td><button type="button" class="btnDownload"><span>다운로드</span></button></td>
+                                <td><button type="button" class="btnCancel"><span>활용취소</span></button></td>
+                            </tr>
+                            <tr>
+                                <td>2020.06.11</td>
+                                <td>토지(임야)기본</td>
+                                <td>서울특별시 은평구</td>
+                                <td>일반자료</td>
+                                <td>속성</td>
+                                <td>N</td>
+                                <td><span class="txtBlue bold">승인</span></td>
+                                <td>2020.06.11</td>
+                                <td>2020.06.11</td>
+                                <td><button type="button" class="btnReturn"><span>반려사유</span></button></td>
+                                <td><button type="button" class="btnCancel"><span>활용취소</span></button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+
+                    <!--pageBtn-->
+                    <div class="pageBtn">
+                        <!--pagination-->
+                        <div class="pagination">
+                            <button type="button" class="btnFirst"><span class="hidden">처음으로</span></button>
+                            <button type="button" class="btnPrev"><span class="hidden">이전</span></button>
+                            <a href="/" class="active">1</a>
+                            <a href="/">2</a>
+                            <a href="/">3</a>
+                            <a href="/">4</a>
+                            <a href="/">5</a>
+                            <a href="/">6</a>
+                            <a href="/">7</a>
+                            <a href="/">8</a>
+                            <a href="/">9</a>
+                            <a href="/">10</a>
+                            <button type="button" class="btnNext"><span class="hidden">다음</span></button>
+                            <button type="button" class="btnLast"><span class="hidden">마지막으로</span></button>
+                        </div>
+                        <!--pagination-->
+
+                        <div class="btnArea">
+                            <div class="right">
+                                <button type="button" class="default greenType">오류신고</button>
+                                <button type="button" class="default blueType">평가하기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//pageBtn-->
+
+                </div>
+                <!--//tabCont-->
+
+
+            </div>
+            <!--//tabContWrap-->
+
+
+
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+    @@include('include/footer.html')
+</div>
+<!--//wrap-->
+
+<div class="alert" style="left:50%;top:500px;">
+    <button type="button" class="btnClose">
+        <span class="hidden">닫기</span>
+    </button>
+    <!--alertCont-->
+    <div class="alertCont">
+        <div class="message">
+            <div class="imgArea imgInfo"></div>
+            <p class="small ">신청 데이터 반려사유</p>
+        </div>
+        <div class="btnArea txt-center">
+            <button type="button" class="blueType">확인</button>
+        </div>
+    </div>
+    <!--//alertCont-->
+</div>
+
+
+</body>
+</html>

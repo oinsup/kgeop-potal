@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+        <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/jquery-ui.css">
+    <link rel="stylesheet" href="../lib/slick/slick.css">
+    <link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+    <link rel="stylesheet" href="../lib/mCustomScrollbar/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../lib/fullPage.js-2.9.7/jquery.fullpage.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/new.css">
+    <script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="../lib/slick/slick.js"></script>
+    <script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+    <script type="text/javascript" src="../lib/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="../lib/counterUp/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="../lib/fullPage.js-2.9.7/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="../lib/masonry/masonry.pkgd.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+    <title>K-Geo 플랫폼</title>
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+<header id="header" class="clearFix">
+    <h1><img src="../images/common/logo_white.png" alt="공간정보드림"></h1>
+    <div class="util">
+        <!--<span class="memName">홍길동님</span>-->
+        <a href="/" class="member off" title="로그인"><span class="btnname">로그인</span></a>
+        <div class="member on" title="로그아웃">
+            <span class="btnname">로그아웃</span>
+            <ul class="userInfo">
+                <li class="infoName">
+                    <a href="#">국토교통부 000 팀<br/>
+                        <b>홍길동님</b>
+                    </a>
+                </li>
+                <li class="infoMypage">
+                    <a href="#" title="마이페이지">마이페이지</a>
+                </li>
+                <li class="logOut">
+                    <a href="#" title="로그아웃">로그아웃</a>
+                </li>
+            </ul>
+        </div>
+        <a href="/" class="memberJoin" title="회원가입"><span class="btnname">회원가입</span></a>
+        <!--<a href="/" class="btnSystem" title="시스템소개 다운로드"><span class="btnname">시스템다운로드</span></a>-->
+        <button type="button" class="btnSearchOpen" title="통합검색"><span class="btnname">검색창 열기</span></button>
+        <button type="button" class="btnSitemap" title="다운로드"><span class="btnname">사이트맵</span></button>
+    </div>
+    <!--inner-->
+    <div class="inner pos-r clearFix">
+        <h2 class="hidden">주요 메뉴 영역</h2>
+
+        <!--gnb-->
+        <div class="gnb">
+            <ul class="menu">
+                <li>
+                    <a href="/">지도드림</a>
+                    <!--<div class="dep2" style="display: none;">
+                        <ul>
+                            <li><a href="/">시스템 로그 관리</a></li>
+                            <li><a href="/">장애관리</a></li>
+                            <li><a href="/">사용자 접속 통계</a></li>
+                            <li><a href="/">메뉴/기능별 통계</a></li>
+                            <li><a href="/">테이블 사용 통계</a></li>
+                        </ul>
+                    </div>-->
+                </li>
+                <li><a href="/">경관심의</a></li>
+                <li><a href="/">통계드림</a></li>
+                <li><a href="/">모두드림</a></li>
+                <li><a href="/">맵갤러리</a></li>
+                <li><a href="/">고객지원</a></li>
+            </ul>
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//inner-->
+    <!--searchContain-->
+    <div class="searchContain">
+        <!--inner-->
+        <div class="inner">
+            <button type="button" class="btnSearchClose"><span class="hidden">검색창 닫기</span></button>
+            <div class="inputArea">
+                <input type="text" placeholder="검색을 원하시는 데이터 명을 입력하세요."/>
+                <button type="button" class="btnSearch"><span class="hidden">검색</span></button>
+                <dl class="searchWordWrap clearFix">
+                    <dt>
+                        인기검색어
+                    </dt>
+                    <dd>
+                        <a href="#">인기검색어</a>
+                    </dd>
+                    <dd>
+                        <a href="#">인기검색어</a>
+                    </dd>
+                    <dd>
+                        <a href="#">인기검색어</a>
+                    </dd>
+                    <dd>
+                        <a href="#">인기검색어</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!--//inner-->
+    </div>
+    <!--//searchContain-->
+        <!--sitemap-->
+        <div class="siteMap">
+            <h1>
+                <img src="../images/common/logo_white.png" alt="[국토교통부]언제 어디서나 모든이에게 K-Geo플랫폼">
+            </h1>
+            <div class="inner">
+                <button type="button" class="btnSiteMapClose"><span class="hidden">닫기</span></button>
+                <ul class="siteMpaList clearFix">
+                    <li>
+                        <a href="#">지도드림</a>
+
+                    <li>
+                        <a href="#">3D활용</a>
+                    </li>
+                    <li>
+                        <a href="#">모두드림</a>
+                        <ul>
+                            <li>
+                                <a href="#">데이터검색</a>
+                            </li>
+                            <li>
+                                <a href="#">분류체계별 검색</a>
+                            </li>
+                            <li>
+                                <a href="#">유형별 검색</a>
+                            </li>
+                            <li>
+                                <a href="#">이용안내</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">이용가이드</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">이용정책</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">통계드림</a>
+                        <ul>
+                            <li>
+                                <a href="#">토지통계</a>
+                            </li>
+                            <li>
+                                <a href="#">건축물통계</a>
+                            </li>
+                            <li>
+                                <a href="#">가격통계</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">맵갤러리</a>
+                    </li>
+                    <li>
+                        <a href="#">고객지원</a>
+                        <ul>
+                            <li>
+                                <a href="#">게시판</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">자료실</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">질의응답</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">기준정보</a>
+                            </li>
+                            <li>
+                                <a href="#">법령정보</a>
+                            </li>
+                            <li>
+                                <a href="#">홍보자료</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--//sitemap-->
+    <!--bgMenu-->
+    <div class="bgMenu"></div>
+    <!--//bgMenu-->
+</header>
+<!--//header-->
+<!--breadcrumb-->
+<div class="searchArea gogaekJiwon noInput clearFix">
+    <div class="outerBg">
+        <!--inner-->
+        <div class="inner">
+            <h3 class="titMain total hidden">통합검색</h3>
+            <div class="box clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+        </div>
+        <!--//inner-->
+    </div>
+</div>
+<!--//breadcrumb-->
+    <!--container-->
+    <div id="container" class="integrated">
+        <h2 class="hidden">본문 영역</h2>
+        <!--content-->
+        <div id="content" class="integrated">
+            <!--tabContWrap-->
+            <div class="tabContWrap type3">
+                <!--tabNav-->
+                <div class="tabNav">
+                    <ul class="tabList hasTotal clearFix">
+                        <li class="active"><a href="#">전체</a></li>
+                        <li><a href="#">국가기본공간정보</a></li>
+                        <li><a href="#">맵갤러리</a></li>
+                        <li><a href="#">자료실</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                </div>
+                <!--//tabNav-->
+                <div class="searchTotal">
+                    <p>
+                        “<strong class="blue">현황</strong>”에 대한 검색결과는 총 <strong class="blue">980</strong>건 입니다.
+                    </p>
+                </div>
+                <!--tabCont-->
+                <div class="tabCont active">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <p class="titMeta">국가기본공간정보</p>
+                        <div class="meta">
+                            <div class="col">165</div>
+                        </div>
+                    </div>
+                    <!--//titleArea-->
+                    <!--boxList-->
+                    <div class="searchBoxList">
+                        <!--box-->
+                        <div class="box">
+                            <div class="boxWrap">
+                                <div class="row">
+                                    <strong>
+                                        <a href="#">정사영상</a>
+                                    </strong>
+                                    <div class="searchLocal">
+                                        <div class="btnHome">
+                                            <a href="#"><span class="hidden">홈</span></a>
+                                        </div>
+                                        <div class="menuName">
+                                            <a href="#">모두드림</a>
+                                        </div>
+                                    </div>
+                                    <div class="tagList right">
+                                        <span class="tag blueLine">지도 &gt; 영상</span>
+                                        <span class="tag greenLine">국토교통부 국토지리정보원</span>
+                                        <span class="tag greenType">공간정보</span>
+                                        <span class="tag">신청가능</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <span class="exp">설명</span>
+                                        항공사진 촬영시 중심투영방식과 지형의 기록으로 인하여 항공사진 촬영시 중심투영방식과 지형의 기록으로 인하여 아항공사진 촬영시 중심투영방식과 지형의...
+                                    </p>
+                                    <i>2020-10-09</i>
+                                    <div class="recommendArea right">
+                                        <div class="icoGroup">
+                                            <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-->
+                        <!--box-->
+                        <div class="box">
+                            <div class="boxWrap">
+                                <div class="row">
+                                    <strong>
+                                        <a href="#">정사영상</a>
+                                    </strong>
+                                    <div class="searchLocal">
+                                        <div class="btnHome">
+                                            <a href="#"><span class="hidden">홈</span></a>
+                                        </div>
+                                        <div class="menuName">
+                                            <a href="#">모두드림</a>
+                                        </div>
+                                    </div>
+                                    <div class="tagList right">
+                                        <span class="tag blueLine">지도 &gt; 영상</span>
+                                        <span class="tag greenLine">국토교통부 국토지리정보원</span>
+                                        <span class="tag greenType">공간정보</span>
+                                        <span class="tag">신청가능</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <span class="exp">설명</span>
+                                        항공사진 촬영시 중심투영방식과 지형의 기록으로 인하여 항공사진 촬영시 중심투영방식과 지형의 기록으로 인하여 아항공사진 촬영시 중심투영방식과 지형의...
+                                    </p>
+                                    <i>2020-10-09</i>
+                                    <div class="recommendArea right">
+                                        <div class="icoGroup">
+                                            <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-->
+                        <!--box-->
+                        <div class="box">
+                            <div class="boxWrap">
+                                <div class="row">
+                                    <strong>
+                                        <a href="#">정사영상</a>
+                                    </strong>
+                                    <div class="searchLocal">
+                                        <div class="btnHome">
+                                            <a href="#"><span class="hidden">홈</span></a>
+                                        </div>
+                                        <div class="menuName">
+                                            <a href="#">모두드림</a>
+                                        </div>
+                                    </div>
+                                    <div class="tagList right">
+                                        <span class="tag blueLine">지도 &gt; 영상</span>
+                                        <span class="tag greenLine">국토교통부 국토지리정보원</span>
+                                        <span class="tag greenType">공간정보</span>
+                                        <span class="tag">신청가능</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <span class="exp">설명</span>
+                                        항공사진 촬영시 중심투영방식과 지형의 기록으로 인하여 항공사진 촬영시 중심투영방식과 지형의 기록으로 인하여 아항공사진 촬영시 중심투영방식과 지형의...
+                                    </p>
+                                    <i>2020-10-09</i>
+                                    <div class="recommendArea right">
+                                        <div class="icoGroup">
+                                            <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-->
+                    </div>
+                    <!--//boxList-->
+                    <div class="btnListMore">
+                        <button type="button">더보기</button>
+                    </div>
+                </div>
+                <!--//tabCont-->
+                <!--tabCont-->
+                <div class="tabCont active">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <p class="titMeta">NS센터 보유목록</p>
+                        <div class="meta">
+                            <div class="col">165</div>
+                        </div>
+                    </div>
+                    <!--//titleArea-->
+                    <!--boxList-->
+                    <div class="searchBoxList">
+                        <!--box-->
+                        <div class="box">
+                            <div class="boxWrap">
+                                <div class="row">
+                                    <strong>
+                                        <a href="#">용<span class="red">지도</span></a>
+                                    </strong>
+                                    <div class="searchLocal">
+                                        <div class="btnHome">
+                                            <a href="#"><span class="hidden">홈</span></a>
+                                        </div>
+                                        <div class="menuName">
+                                            <a href="#">NS센터 보유목록</a>
+                                        </div>
+                                    </div>
+                                    <div class="tagList right">
+                                        <span class="tag blueLine">도로·교통·물류 &gt; 철도</span>
+                                        <span class="tag greenLine">한국철도시설공단</span>
+                                        <span class="tag greenType">지도</span>
+                                        <span class="tag greyType">null</span>
+                                        <span class="tag">신청가능</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <span class="exp">설명</span>
+                                        용<span class="red">지도</span>
+                                    </p>
+                                    <i>2020-10-09</i>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-->
+                        <!--box-->
+                        <div class="box">
+                            <div class="boxWrap">
+                                <div class="row">
+                                    <strong>
+                                        <a href="#"><span class="red">지도</span>단속</a>
+                                    </strong>
+                                    <div class="searchLocal">
+                                        <div class="btnHome">
+                                            <a href="#"><span class="hidden">홈</span></a>
+                                        </div>
+                                        <div class="menuName">
+                                            <a href="#">NS센터 보유목록</a>
+                                        </div>
+                                    </div>
+                                    <div class="tagList right">
+                                        <span class="tag blueLine">도로·교통·물류 &gt; 철도</span>
+                                        <span class="tag greenLine">한국철도시설공단</span>
+                                        <span class="tag greenType">자료유형</span>
+                                        <span class="tag greyType">null</span>
+                                        <span class="tag redType">신청불가능</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <span class="exp">설명</span>
+                                        단속사유, 기간, 인원, 업소 등 <span class="red">지도</span>단속 정보를 관리
+                                    </p>
+                                    <i>2020-10-09</i>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-->
+                        <!--box-->
+                        <div class="box">
+                            <div class="boxWrap">
+                                <div class="row">
+                                    <strong>
+                                        <a href="#"><span class="red">지도</span>단속</a>
+                                    </strong>
+                                    <div class="searchLocal">
+                                        <div class="btnHome">
+                                            <a href="#"><span class="hidden">홈</span></a>
+                                        </div>
+                                        <div class="menuName">
+                                            <a href="#">NS센터 보유목록</a>
+                                        </div>
+                                    </div>
+                                    <div class="tagList right">
+                                        <span class="tag blueLine">도로·교통·물류 &gt; 철도</span>
+                                        <span class="tag greenLine">한국철도시설공단</span>
+                                        <span class="tag greenType">자료유형</span>
+                                        <span class="tag greyType">null</span>
+                                        <span class="tag redType">신청불가능</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <span class="exp">설명</span>
+                                        단속사유, 기간, 인원, 업소 등 <span class="red">지도</span>단속 정보를 관리
+                                    </p>
+                                    <i>2020-10-09</i>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-->
+                    </div>
+                    <!--//boxList-->
+                    <div class="btnListMore">
+                        <button type="button">더보기</button>
+                    </div>
+                </div>
+                <!--//tabCont-->
+                <!--tabCont-->
+                <div class="tabCont active">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <p class="titMeta">공간정보 목록</p>
+                        <div class="meta">
+                            <div class="col">165</div>
+                        </div>
+                    </div>
+                    <!--//titleArea-->
+                    <!--boxList-->
+                    <div class="searchBoxList">
+                        <!--box-->
+                        <div class="box">
+                            <div class="boxWrap">
+                                <div class="row">
+                                    <strong>
+                                        <a href="#"><span class="red">지도</span>단속</a>
+                                    </strong>
+                                    <div class="searchLocal">
+                                        <div class="btnHome">
+                                            <a href="#"><span class="hidden">홈</span></a>
+                                        </div>
+                                        <div class="menuName">
+                                            <a href="#">NS센터 보유목록</a>
+                                        </div>
+                                    </div>
+                                    <div class="tagList right">
+                                        <span class="tag blueLine">도로·교통·물류 &gt; 철도</span>
+                                        <span class="tag greenLine">한국철도시설공단</span>
+                                        <span class="tag greenType">자료유형</span>
+                                        <span class="tag greyType">null</span>
+                                        <span class="tag redType">신청불가능</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <span class="exp">설명</span>
+                                        단속사유, 기간, 인원, 업소 등 <span class="red">지도</span>단속 정보를 관리
+                                    </p>
+                                    <i>2020-10-09</i>
+                                    <div class="recommendArea right">
+                                        <div class="icoGroup">
+                                            <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-->
+                    </div>
+                    <!--//boxList-->
+                    <div class="btnListMore">
+                        <button type="button">더보기</button>
+                    </div>
+                </div>
+                <!--//tabCont-->
+                <!--tabCont-->
+                <div class="tabCont active">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <p class="titMeta">통계드림</p>
+                        <div class="meta">
+                            <div class="col">165</div>
+                        </div>
+                    </div>
+                    <!--//titleArea-->
+                    <!--boxList-->
+                    <div class="searchBoxList">
+                        <!--box-->
+                        <div class="box">
+                            <div class="boxWrap">
+                                <div class="row">
+                                    <strong>
+                                        <a href="#"><span class="red">사용자</span>지도 등록시 승인</a>
+                                    </strong>
+                                    <div class="searchLocal">
+                                        <div class="btnHome">
+                                            <a href="#"><span class="hidden">홈</span></a>
+                                        </div>
+                                        <div class="menuName">
+                                            <a href="#">맵갤러리</a>
+                                        </div>
+                                    </div>
+                                    <div class="tagList right">
+                                        <div class="tagGroup">
+                                            <span class="tag greenLine">비공유</span>
+                                            <span class="tag blueLine">감사원 기획조정실</span>
+                                        </div>
+                                        <span class="tag purpleType">작성자</span>
+                                        <i>매년 12월</i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <span class="exp">설명</span>
+                                        단속사유, 기간, 인원, 업소 등 <span class="red">지도</span>단속 정보를 관리
+                                    </p>
+                                    <i>2020-10-09</i>
+                                    <div class="recommendArea right">
+                                        <div class="icoGroup">
+                                            <b class="recommend heart"><span class="tooltip">평가수</span>5</b>
+                                            <b class="recommend best"><span class="tooltip">추천수</span>8</b>
+                                            <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-->
+                        <!--box-->
+                        <div class="box">
+                            <div class="boxWrap">
+                                <div class="row">
+                                    <strong>
+                                        <a href="#"><span class="red">사용자</span>지도 등록시 승인</a>
+                                    </strong>
+                                    <div class="searchLocal">
+                                        <div class="btnHome">
+                                            <a href="#"><span class="hidden">홈</span></a>
+                                        </div>
+                                        <div class="menuName">
+                                            <a href="#">맵갤러리</a>
+                                        </div>
+                                    </div>
+                                    <div class="tagList right">
+                                        <span class="tag purpleType">작성자</span>
+                                        <i>매년 12월</i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <span class="exp">설명</span>
+                                        단속사유, 기간, 인원, 업소 등 <span class="red">지도</span>단속 정보를 관리
+                                    </p>
+                                    <i>2020-10-09</i>
+                                    <div class="recommendArea right">
+                                        <div class="icoGroup">
+                                            <b class="recommend heart"><span class="tooltip">평가수</span>5</b>
+                                            <b class="recommend best"><span class="tooltip">추천수</span>8</b>
+                                            <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-->
+                    </div>
+                    <!--//boxList-->
+                    <div class="btnListMore">
+                        <button type="button">더보기</button>
+                    </div>
+                </div>
+                <!--//tabCont-->
+                <!--tabCont-->
+                <div class="tabCont active">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <p class="titMeta">기타</p>
+                        <div class="meta">
+                            <div class="col">165</div>
+                        </div>
+                    </div>
+                    <!--//titleArea-->
+                    <!--boxList-->
+                    <div class="searchBoxList">
+                        <!--box-->
+                        <div class="box">
+                            <div class="boxWrap">
+                                <div class="row">
+                                    <strong>
+                                        <a href="#"><span class="red">사용자</span>지도 등록시 승인</a>
+                                    </strong>
+                                    <div class="searchLocal">
+                                        <div class="btnHome">
+                                            <a href="#"><span class="hidden">홈</span></a>
+                                        </div>
+                                        <div class="menuName">
+                                            <a href="#">맵갤러리</a>
+                                        </div>
+                                    </div>
+                                    <div class="tagList right">
+                                        <span class="tag purpleType">작성자</span>
+                                        <i>홍길동</i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <span class="exp">설명</span>
+                                        단속사유, 기간, 인원, 업소 등 <span class="red">지도</span>단속 정보를 관리
+                                    </p>
+                                    <i>2020-10-09</i>
+                                    <div class="recommendArea right">
+                                        <div class="icoGroup">
+                                            <b class="recommend heart"><span class="tooltip">평가수</span>5</b>
+                                            <b class="recommend best"><span class="tooltip">추천수</span>8</b>
+                                            <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-->
+                        <!--box-->
+                        <div class="box">
+                            <div class="boxWrap">
+                                <div class="row">
+                                    <strong>
+                                        <a href="#"><span class="red">사용자</span>지도 등록시 승인</a>
+                                    </strong>
+                                    <div class="searchLocal">
+                                        <div class="btnHome">
+                                            <a href="#"><span class="hidden">홈</span></a>
+                                        </div>
+                                        <div class="menuName">
+                                            <a href="#">맵갤러리</a>
+                                        </div>
+                                    </div>
+                                    <div class="tagList right">
+                                        <span class="tag purpleType">작성자</span>
+                                        <i>홍길동</i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <span class="exp">설명</span>
+                                        단속사유, 기간, 인원, 업소 등 <span class="red">지도</span>단속 정보를 관리
+                                    </p>
+                                    <i>2020-10-09</i>
+                                    <div class="recommendArea right">
+                                        <div class="icoGroup">
+                                            <b class="recommend heart"><span class="tooltip">평가수</span>5</b>
+                                            <b class="recommend best"><span class="tooltip">추천수</span>8</b>
+                                            <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-->
+                    </div>
+                    <!--//boxList-->
+                    <div class="btnListMore">
+                        <button type="button">더보기</button>
+                    </div>
+                </div>
+                <!--//tabCont-->
+            </div>
+            <!--//tabContWrap-->
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+    
+
+<!--familySite-->
+<div class="familySite potal">
+    <div class="siteList">
+        <ul>
+            <li><a href="/">지도드림</a></li>
+            <li><a href="/">경관심의</a></li>
+            <li><a href="/">통계드림</a></li>
+            <li><a href="/">모두드림</a></li>
+            <li><a href="/">맵갤러리</a></li>
+            <li><a href="/">고객지원</a></li>
+        </ul>
+    </div>
+
+</div>
+<!--//familySite-->
+<!--mainFooter-->
+<footer class="mainFooter potal">
+    <div class="inner">
+        <p class="logo"><img src="../images/main/logo-footer.png" alt="국토교통부"></p>
+        <div class="company">
+            <ul class="clearFix">
+                <li><a href="/">개인정보 처리방침</a></li>
+                <li><a href="/">저작권정책</a></li>
+                <li><a href="/">이메일무단수집거부</a></li>
+                <li><a href="/">개발지원센터</a></li>
+                <li><a href="/">사이트맵</a></li>
+            </ul>
+            <div class="siteInfo">
+                <div>
+                    <address>(우)30103 세종특별자치시 도움6로 11 국토교통부 국가공간정보센터 </address>
+                    <a href="te:1899-6523">Help-Desk : 1899-6523</a>
+                    <a href="tel:031-463-3559">FAX : 031-463-3559</a>
+                    <a href="mailto:nsdi6028@korea.kr">E-mail : nsdi6028@korea.kr</a>
+                </div>
+                <p class="copyright">Copyright (c) NSDIS, All Rights reserved.</p>
+            </div>
+        </div>
+        <div class="customer">
+            <p>고객문의</p>
+            <a href="tel:1588-1234" class="tel">1588 -1234</a>
+            <a href="mailto:nsdi6028@korea.kr" class="email">nsdi6028@korea.kr</a>
+        </div>
+    </div>
+</footer>
+<!--//mainFooter-->
+</div>
+<!--//wrap-->
+</body>
+</html>

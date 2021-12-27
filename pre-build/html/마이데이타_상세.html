@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_고객지원.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_마이페이지.html')
+        <!--content-->
+        <div id="content" class="dataCart">
+            <h3 class="titPage">데이터 담기 목록 - 상세</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+            <h4 class="titSub">데이터 담기 정보</h4>
+            <!--table-->
+            <div class="table">
+                <table>
+                    <caption>데이터 담기 정보</caption>
+                    <colgroup>
+                        <col style="width:130px;">
+                        <col style="width:387px;">
+                        <col style="width:137px;">
+                        <col style="width:auto">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">데이터 명</th>
+                        <td>행정구역시군구_경계</td>
+                        <th scope="row">데이터 유형</th>
+                        <td>도형</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="sel01">자료유형</label></th>
+                        <td>
+                            <select id="sel01" class="w100">
+                                <option selected>시점자료</option>
+                                <option ></option>
+                                <option ></option>
+                                <option ></option>
+                            </select>
+                        </td>
+                        <th scope="row"><label for="sel02">개인정보 포함</label></th>
+                        <td>
+                            <select id="sel02" class="w100">
+                                <option selected>포함</option>
+                                <option >미포함</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">자료범위</th>
+                        <td colspan="3">
+                            <select id="sel03" class="w30">
+                                <option selected>전국</option>
+                                <option ></option>
+                            </select>
+                            <select id="sel04" class="w30">
+                                <option selected>전체</option>
+                                <option ></option>
+                            </select>
+                            <select id="sel05" class="w30">
+                                <option selected>전체</option>
+                                <option ></option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>정기다운로드</th>
+                        <td colspan="3" class="txtLeft">
+                            <div class="radioGroup">
+                                <div class="radio">
+                                    <input type="radio" name="radio" id="radio01" class="hidden" />
+                                    <label for="radio01">1회</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="radio" id="radio02" class="hidden"  />
+                                    <label for="radio02">정기다운로드</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//table-->
+
+            <div class="titleArea clearFix mTop">
+                <h4 class="titSub">연관 데이터 추가</h4>
+                <i class="right">※ 연관데이터는 동일한 신청 목적과 유형으로 일괄 신청 가능합니다.</i>
+            </div>
+            <!--table-->
+            <div class="table mScroll" style="height:200px;">
+                <table>
+                    <caption>연관 데이터 추가</caption>
+                    <colgroup>
+                        <col style="width:60px;">
+                        <col style="width:110px;">
+                        <col style="width:220px;">
+                        <col style="width:280px;">
+                        <col style="width:150px;">
+                        <col style="width:auto">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="chk00" />
+                                <label for="chk00"></label>
+                            </div>
+                        </th>
+                        <th scope="col">데이터 유형</th>
+                        <th scope="col">데이터 명</th>
+                        <th scope="col">데이터 분류</th>
+                        <th scope="col">데이터 공개구분</th>
+                        <th scope="col">개인정보 포함</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="chk01" />
+                                <label for="chk01"></label>
+                            </div>
+                        </td>
+                        <td>도형</td>
+                        <td>건물통합정보_마스터</td>
+                        <td>토지(국토관리 · 지역개발)</td>
+                        <td>공개</td>
+                        <td>미포함</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="chk02" />
+                                <label for="chk02"></label>
+                            </div>
+                        </td>
+                        <td>도형</td>
+                        <td>건물통합정보_마스터</td>
+                        <td>토지(국토관리 · 지역개발)</td>
+                        <td>공개</td>
+                        <td>미포함</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="chk03" />
+                                <label for="chk03"></label>
+                            </div>
+                        </td>
+                        <td>도형</td>
+                        <td>건물통합정보_마스터</td>
+                        <td>토지(국토관리 · 지역개발)</td>
+                        <td>공개</td>
+                        <td>미포함</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="chk04" />
+                                <label for="chk04"></label>
+                            </div>
+                        </td>
+                        <td>도형</td>
+                        <td>건물통합정보_마스터</td>
+                        <td>토지(국토관리 · 지역개발)</td>
+                        <td>공개</td>
+                        <td>미포함</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="chk05" />
+                                <label for="chk05"></label>
+                            </div>
+                        </td>
+                        <td>도형</td>
+                        <td>건물통합정보_마스터</td>
+                        <td>토지(국토관리 · 지역개발)</td>
+                        <td>공개</td>
+                        <td>미포함</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//table-->
+            <!--<div class="meaning mScroll" style="height:138px;">
+                <p>맵갤러리 평가 내용입니다.</p>
+            </div>-->
+            <div class="btnArea txtRight">
+                <button type="button" class="lightGreyType">목록</button>
+                <button type="button" class="blueType">수정</button>
+            </div>
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+
+    @@include('include/footer.html')
+
+
+</div>
+<!--//wrap-->
+</body>
+</html>

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+        <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/jquery-ui.css">
+    <link rel="stylesheet" href="../lib/slick/slick.css">
+    <link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+    <link rel="stylesheet" href="../lib/mCustomScrollbar/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../lib/fullPage.js-2.9.7/jquery.fullpage.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/new.css">
+    <script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="../lib/slick/slick.js"></script>
+    <script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+    <script type="text/javascript" src="../lib/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="../lib/counterUp/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="../lib/fullPage.js-2.9.7/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="../lib/masonry/masonry.pkgd.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+    <title>K-Geo 플랫폼</title>
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+        <!--header-->
+    <header id="header" class="clearFix">
+        <h1><img src="../images/common/logo_white.png" alt="공간정보드림"></h1>
+        <div class="util">
+            <a href="/" class="member off" title="로그인"><span class="btnname">로그인</span></a>
+            <div class="member on" title="로그아웃">
+                <span class="btnname">로그아웃</span>
+                <ul class="userInfo">
+                    <li class="infoName">
+                        <a href="#">국토교통부 000 팀<br/>
+                            <b>홍길동님</b>
+                        </a>
+                    </li>
+                    <li class="infoMypage">
+                        <a href="#" title="마이페이지">마이페이지</a>
+                    </li>
+                    <li class="logOut">
+                        <a href="#" title="로그아웃">로그아웃</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="/" class="memberJoin" title="회원가입"><span class="btnname">회원가입</span></a>
+            <!--<a href="/" class="btnSystem" title="시스템소개 다운로드"><span class="btnname">시스템다운로드</span></a>-->
+            <button type="button" class="btnSearchOpen" title="통합검색"><span class="btnname">검색창 열기</span></button>
+            <button type="button" class="btnSitemap" title="다운로드"><span class="btnname">사이트맵</span></button>
+        </div>
+        <!--inner-->
+        <div class="inner pos-r clearFix">
+            <h2 class="hidden">주요 메뉴 영역</h2>
+
+            <!--gnb-->
+            <div class="gnb">
+                <ul class="menu">
+                    <li>
+                        <a href="/">지도드림</a>
+                        <!--<div class="dep2" style="display: none;">
+                            <ul>
+                                <li><a href="/">시스템 로그 관리</a></li>
+                                <li><a href="/">장애관리</a></li>
+                                <li><a href="/">사용자 접속 통계</a></li>
+                                <li><a href="/">메뉴/기능별 통계</a></li>
+                                <li><a href="/">테이블 사용 통계</a></li>
+                            </ul>
+                        </div>-->
+                    </li>
+                    <li><a href="/">경관심의</a></li>
+                    <li><a href="/">통계드림</a></li>
+                    <li><a href="/">모두드림</a></li>
+                    <li><a href="/">맵갤러리</a></li>
+                    <li><a href="/">고객지원</a></li>
+                </ul>
+            </div>
+            <!--//gnb-->
+        </div>
+        <!--//inner-->
+        <!--searchContain-->
+        <div class="searchContain">
+            <!--inner-->
+            <div class="inner">
+                <button type="button" class="btnSearchClose"><span class="hidden">검색창 닫기</span></button>
+                <div class="inputArea">
+                    <input type="text" placeholder="검색을 원하시는 데이터 명을 입력하세요."/>
+                    <button type="button" class="btnSearch"><span class="hidden">검색</span></button>
+                    <dl class="searchWordWrap clearFix">
+                        <dt>
+                            인기검색어
+                        </dt>
+                        <dd>
+                            <a href="#">인기검색어</a>
+                        </dd>
+                        <dd>
+                            <a href="#">인기검색어</a>
+                        </dd>
+                        <dd>
+                            <a href="#">인기검색어</a>
+                        </dd>
+                        <dd>
+                            <a href="#">인기검색어</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!--//inner-->
+        </div>
+        <!--//searchContain-->
+        <!--sitemap-->
+        <div class="siteMap">
+            <h1>
+                <img src="../images/common/logo_white.png" alt="[국토교통부]언제 어디서나 모든이에게 K-Geo플랫폼">
+            </h1>
+            <div class="inner">
+                <button type="button" class="btnSiteMapClose"><span class="hidden">닫기</span></button>
+                <ul class="siteMpaList clearFix">
+                    <li>
+                        <a href="#">지도드림</a>
+
+                    <li>
+                        <a href="#">3D활용</a>
+                    </li>
+                    <li>
+                        <a href="#">모두드림</a>
+                        <ul>
+                            <li>
+                                <a href="#">데이터검색</a>
+                            </li>
+                            <li>
+                                <a href="#">분류체계별 검색</a>
+                            </li>
+                            <li>
+                                <a href="#">유형별 검색</a>
+                            </li>
+                            <li>
+                                <a href="#">이용안내</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">이용가이드</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">이용정책</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">통계드림</a>
+                        <ul>
+                            <li>
+                                <a href="#">토지통계</a>
+                            </li>
+                            <li>
+                                <a href="#">건축물통계</a>
+                            </li>
+                            <li>
+                                <a href="#">가격통계</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">맵갤러리</a>
+                    </li>
+                    <li>
+                        <a href="#">고객지원</a>
+                        <ul>
+                            <li>
+                                <a href="#">게시판</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">자료실</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">질의응답</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">기준정보</a>
+                            </li>
+                            <li>
+                                <a href="#">법령정보</a>
+                            </li>
+                            <li>
+                                <a href="#">홍보자료</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--//sitemap-->
+        <!--bgMenu-->
+        <div class="bgMenu"></div>
+        <!--//bgMenu-->
+    </header>
+    <!--//header-->
+    <!--breadcrumb-->
+    <div class="searchArea gogaekJiwon noInput clearFix">
+        <div class="outerBg">
+            <!--inner-->
+            <div class="inner">
+                <h3 class="titMain customer">고객지원</h3>
+                <div class="box clearFix">
+                    <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                    <div class="menuName"><a href="/">고객지원</a></div>
+                    <div class="menuName"><a href="/">고객지원</a></div>
+                </div>
+            </div>
+            <!--//inner-->
+        </div>
+    </div>
+    <!--//breadcrumb-->
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+            <!--lnb-->
+    <div id="lnb">
+        <div class="localName"><span>고객지원</span></div>
+        <ul class="lnbMenu">
+            <!--<li class="innerMenu active">
+                <a href="/">시스템소개</a>
+                <div>
+                    <ul>
+                        <li><a href="/">홍보자료</a></li>
+                        <li><a href="/">맵갤러리</a></li>
+                    </ul>
+                </div>
+            </li>-->
+            <li><a href="/">사용자 정보</a></li>
+            <li><a href="/">주소록</a></li>
+            <li><a href="/">최근 작업지도</a></li>
+            <li><a href="/">맵 즐겨찾기</a></li>
+            <li><a href="/">My Data</a></li>
+        </ul>
+    </div>
+    <!--//lnb-->
+        <!--content-->
+        <div id="content">
+            <h3 class="titPage">권한변경 신청 상세</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+
+            <!--clearFix-->
+            <div class="adRequest clearFix">
+                <!--box-->
+                <div class="box">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <h4 class="titSub">등록구분</h4>
+                    </div>
+                    <!--//titleArea-->
+                    <!--table-->
+                    <div class="table">
+                        <table>
+                            <caption class="hidden">등록구분</caption>
+                            <colgroup>
+                                <col style="width:163px;" />
+                                <col style="width:178px" />
+                                <col style="width:163px" />
+                                <col style="width:178px" />
+                                <col style="width:163px" />
+                                <col style="width:auto" />
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th class="row">권한신청 상태</th>
+                                <td class="txtLeft" style="line-height:35px;padding-right:5px;">미승인
+                                    <button type="button" class="greyLine right">반려사유</button>
+                                </td>
+                                <th class="row">신청일</th>
+                                <td class="txtLeft">2020-07-07</td>
+                                <th class="row">처리일</th>
+                                <td class="txtLeft">2020-07-08</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </div>
+                <!--//box-->
+                <!--box-->
+                <div class="box">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <h4 class="titSub">사용자 정보</h4>
+                    </div>
+                    <!--//titleArea-->
+                    <!--table-->
+                    <div class="table">
+                        <table>
+                            <caption class="hidden">사용자 정보</caption>
+                            <colgroup>
+                                <col style="width:163px;" />
+                                <col style="width:357px" />
+                                <col style="width:163px" />
+                                <col style="width:auto" />
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th class="row">아이디</th>
+                                <td class="txtLeft">user0123</td>
+                                <th class="row">이름</th>
+                                <td class="txtLeft">홍길동</td>
+                            </tr>
+                            <tr>
+                                <th class="row">생년월일</th>
+                                <td class="txtLeft">
+                                    <button type="button" class="greyLine">비밀번호 초기화</button>
+                                </td>
+                                <th class="row">기관</th>
+                                <td class="txtLeft">1984-01-09</td>
+                            </tr>
+                            <tr>
+                                <th class="row">휴대폰번호</th>
+                                <td class="txtLeft">010-1234-5678</td>
+                                <th class="row">행정전화번호</th>
+                                <td class="txtLeft">02-1234-5678</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </div>
+                <!--//box-->
+                <!--box-->
+                <div class="box">
+                    <!--titleArea-->
+                    <div class="titleArea clearFix">
+                        <h4 class="titSub">권한부여 대상업무</h4>
+                    </div>
+                    <!--//titleArea-->
+                    <!--table-->
+                    <div class="table">
+                        <table>
+                            <caption class="hidden">권한부여 대상업무</caption>
+                            <colgroup>
+                                <col style="width:163px;" />
+                                <col style="width:auto" />
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th class="row">신청권한</th>
+                                <td class="txtLeft">KLIS 시군구 부동산정보, KLIS 시군구 공인중개사, KLIS 시군구 부동산개발업</td>
+                            </tr>
+                            <tr>
+                                <th class="row">신청권한 사유 및<br/>대상 업무</th>
+                                <td class="txtLeft">부동산 개발업 업무수행에 따른 KLIS 시군구 부동산개발업 권한 필요</td>
+                            </tr>
+                            <tr>
+                                <th class="row">기타</th>
+                                <td class="txtLeft"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </div>
+                <!--//box-->
+                <div class="btnArea search">
+                    <div class="left">
+                        <button type="button" class="greyType">승인</button>
+                        <button type="button" class="blueType">반려</button>
+                    </div>
+                    <div class="right">
+                        <button type="button" class="blueType">목록</button>
+                    </div>
+
+                </div>
+            </div>
+            <!--//clearFix-->
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+    
+<div class="aside white">
+    <div class="popupArea">
+        <div class="titPop">POPUP<br />ZONE</div>
+        <div class="titPop mini">POP<br />UP</div>
+        <ul>
+            <li class="menu01"><a href="#">마이페이지</a></li>
+            <li class="menu02"><a href="#">내 지도드림</a></li>
+            <li class="menu03"><a href="#">법률정보</a></li>
+            <li class="menu04"><a href="#">공지사항</a></li>
+            <li class="menu05"><a href="#">홍보자료</a></li>
+            <li class="menu06"><a href="#">시스템소개</a></li>
+            <li class="menu07"><a href="#">장바구니</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!--popupZone-->
+<div class="popupZone">
+    <div class="popCont">
+        <p class="titPopZone">K-Geo 플랫폼 <span>POPUP ZONE</span></p>
+        <div class="noticeWrap">
+            <div class="slickNotice">
+                <div class="item">
+                    <div class="box">
+                        <div class="innerBox">
+                            <span class="tag purple">정책자료</span>
+                            <div class="imgArea">
+
+                            </div>
+                            <div class="txtArea">
+                                <strong>공지사항 제목입니다. 공지사항 제목입니다.</strong>
+                                <div class="desc">공지사항 관련 내용입니다.</div>
+                                <i>2020-11-20</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="innerBox noImg">
+                            <span class="tag green">정책자료</span>
+                            <div class="txtArea">
+                                <strong>공지사항 제목입니다. 공지사항 제목입니다.</strong>
+                                <div class="desc">공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.공지사항 관련 내용입니다.</div>
+                                <i>2020-11-20</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="innerBox">
+                            <span class="tag purple">정책자료</span>
+                            <div class="imgArea">
+
+                            </div>
+                            <div class="txtArea">
+                                <strong>공지사항 제목입니다. 공지사항 제목입니다.</strong>
+                                <div class="desc">공지사항 관련 내용입니다.</div>
+                                <i>2020-11-20</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="innerBox">
+                            <span class="tag purple">정책자료</span>
+                            <div class="imgArea">
+                                <img src="../images/main/bg-no-img.png" />
+                            </div>
+                            <div class="txtArea">
+                                <strong>공지사항 제목입니다. 공지사항 제목입니다.</strong>
+                                <div class="desc">
+                                    <div>
+                                        <p>공지사항 관련 내용입니다공지사항 관련 내용입니다공지사항 관련 내용입니다공지사항 관련 내용입니다공지사항 관련 내용입니다공지사항 관련 내용입니다공지사항 관련 내용입니다공지사항 관련 내용입니다공지사항 관련 내용입니다공지사항 관련 내용입니다공지사항 관련 내용입니다공지사항 관련 내용입니다</p>
+                                    </div>
+                                </div>
+                                <i>2020-11-20</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagi">
+                <div class="btnGroup">
+                    <button type="button" class="btnSlickPrev"><span class="hidden">이전</span></button>
+                    <p><span class="thisPagi">1</span> <span>/</span> <span class="pagiLength"></span></p>
+                    <button type="button" class="btnSlickNext"><span class="hidden">다음</span></button>
+                    <button type="button" class="btnSlickPause"><span class="hidden">일시정지</span></button>
+                    <button type="button" class="btnSlickPlay"><span class="hidden">재생</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="btnArea">
+            <button type="button" class="btnTodayClose">오늘하루열지않기</button>
+            <button type="button" class="btnPopClose">닫기</button>
+        </div>
+    </div>
+</div>
+<!--//popupZone-->
+
+<!--familySite-->
+<div class="familySite potal">
+    <div class="siteList">
+        <ul>
+            <li><a href="/">지도드림</a></li>
+            <li><a href="/">경관심의</a></li>
+            <li><a href="/">통계드림</a></li>
+            <li><a href="/">모두드림</a></li>
+            <li><a href="/">맵갤러리</a></li>
+            <li><a href="/">고객지원</a></li>
+        </ul>
+    </div>
+
+</div>
+<!--//familySite-->
+<!--mainFooter-->
+<footer class="mainFooter potal">
+    <div class="inner">
+        <p class="logo"><img src="../images/main/logo-footer.png" alt="국토교통부"></p>
+        <div class="company">
+            <ul class="clearFix">
+                <li><a href="/">개인정보 처리방침</a></li>
+                <li><a href="/">저작권정책</a></li>
+                <li><a href="/">이메일무단수집거부</a></li>
+                <li><a href="/">개발지원센터</a></li>
+                <li><a href="/">사이트맵</a></li>
+            </ul>
+            <div class="siteInfo">
+                <div>
+                    <address>(우)30103 세종특별자치시 도움6로 11 국토교통부 국가공간정보센터 </address>
+                    <a href="te:1899-6523">Help-Desk : 1899-6523</a>
+                    <a href="tel:031-463-3559">FAX : 031-463-3559</a>
+                    <a href="mailto:nsdi6028@korea.kr">E-mail : nsdi6028@korea.kr</a>
+                </div>
+                <p class="copyright">Copyright (c) NSDIS, All Rights reserved.</p>
+            </div>
+        </div>
+        <div class="customer">
+            <p>고객문의</p>
+            <a href="tel:1588-1234" class="tel">1588 -1234</a>
+            <a href="mailto:nsdi6028@korea.kr" class="email">nsdi6028@korea.kr</a>
+        </div>
+    </div>
+</footer>
+<!--//mainFooter-->
+    <!--popup-->
+    <div class="popup" style="width:597px;left:289px;top:150px">
+        <!--popupHeader-->
+        <div class="popupHeader">
+            <h3>반려사유</h3>
+            <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+        </div>
+        <!--//popupHeader-->
+        <!--popupMain-->
+        <div class="popupMain">
+            <!--popupPd-->
+            <div class="popupPd">
+                <div class="returnArea">
+                    <div class="returnBox">
+                        권한신청 반려사유 내용...<br>
+                        반려사유 내용 해당 사용자에게 SMS전송 안내
+                    </div>
+                    <div class="btnArea">
+                        <button type="button" class="blueType">저장</button>
+                    </div>
+                </div>
+            </div>
+            <!--//popupPd-->
+        </div>
+        <!--//popupMain-->
+    </div>
+    <!--//popup-->
+    <!--popup-->
+    <div class="popup" style="width:597px;left:889px;top:150px">
+        <!--popupHeader-->
+        <div class="popupHeader">
+            <h3>반려사유</h3>
+            <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+        </div>
+        <!--//popupHeader-->
+        <!--popupMain-->
+        <div class="popupMain">
+            <!--popupPd-->
+            <div class="popupPd">
+                <div class="returnArea">
+                    <div class="returnBox">
+                        반려사유 내용...<br/><br/>
+                        권신청 상태 여부가 반려일 경우<br/>
+                        반려사유 버튼 활성화<br/><br/>
+                        버튼 클릭시 반려사유 팝업창 표출
+                    </div>
+                </div>
+            </div>
+            <!--//popupPd-->
+        </div>
+        <!--//popupMain-->
+    </div>
+    <!--//popup-->
+</div>
+<!--//wrap-->
+</body>
+</html>

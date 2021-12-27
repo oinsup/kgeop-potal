@@ -1,0 +1,371 @@
+[
+	{
+		"style": "esriSMSCircle",
+		"color": [
+			0,
+			0,
+			128,
+			128
+		],
+		"name": "Circle",
+		"outline": {
+			"color": [
+				0,
+				0,
+				128,
+				255
+			],
+			"width": 1
+		},
+		"type": "esriSMS",
+		"size": 18
+	},
+	{
+		"style": "esriSMSSquare",
+		"color": [
+			0,
+			0,
+			128,
+			128
+		],
+		"name": "Square",
+		"outline": {
+			"color": [
+				0,
+				0,
+				128,
+				255
+			],
+			"width": 1
+		},
+		"type": "esriSMS",
+		"size": 18
+	},
+	{
+		"style": "esriSMSDiamond",
+		"color": [
+			0,
+			0,
+			128,
+			128
+		],
+		"name": "Diamond",
+		"outline": {
+			"color": [
+				0,
+				0,
+				128,
+				255
+			],
+			"width": 1
+		},
+		"type": "esriSMS",
+		"size": 18
+	},
+	{
+		"style": "esriSMSCross",
+		"color": [
+			0,
+			0,
+			128,
+			128
+		],
+		"name": "Cross",
+		"outline": {
+			"color": [
+				0,
+				0,
+				128,
+				255
+			],
+			"width": 1
+		},
+		"type": "esriSMS",
+		"size": 18
+	},
+	{
+		"style": "esriSMSX",
+		"color": [
+			0,
+			0,
+			128,
+			128
+		],
+		"name": "X",
+		"outline": {
+			"color": [
+				0,
+				0,
+				128,
+				255
+			],
+			"width": 1
+		},
+		"type": "esriSMS",
+		"size": 18
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Arrow",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Arrow.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Beacon",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Beacon.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Capital",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Capital1.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Capital",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Capital2.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "CartographyMarker",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/CartographyMarker.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "CheckeredFlag",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/CheckeredFlag.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "CrimeMarker",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/CrimeMarker1.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "CrimeMarker",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/CrimeMarker2.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "CrossHair",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/CrossHair.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Flag",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Flag.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Populated",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Populated1.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Populated",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Populated2.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Populated",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Populated3.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Populated",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Populated4.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Populated",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Populated5.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Populated",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Populated6.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Populated",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Populated7.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "ShinyPin",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/ShinyPin.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Sphere",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Sphere.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Stickpin",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Stickpin.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Symbol_UGStructure_Manhole",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Symbol_UGStructure_Manhole.png"
+	},
+	{
+		"imageData": "",
+		"height": 24,
+		"xoffset": 0,
+		"yoffset": 0,
+		"width": 24,
+		"name": "Waypoint",
+		"contentType": "image/png",
+		"type": "",
+		"angle": 0,
+		"url": "images/Symbols/Basic/Waypoint.png"
+	}
+]

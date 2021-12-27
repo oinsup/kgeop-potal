@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_고객지원.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_정보드림.html')
+        <!--content-->
+        <div id="content">
+            <h3 class="hdPage titPage noBullit">권한변경 신청 관리</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+
+
+            <!--searchBox-->
+            <div class="searchBox type2 clearFix">
+                <div class="col">
+                    <label for="ss01">상태구분</label>
+                    <select id="ss01" style="width:97px;">
+                        <option selected>전체</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="input01">신청자명</label>
+                    <input type="text" id="input01" style="width:157px;"/>
+                </div>
+                <div class="col">
+                    <div class="btnSearch fixed">
+                        <button type="button">검색</button>
+                    </div>
+                </div>
+            </div>
+            <!--//searchBox-->
+            <!--titleArea-->
+            <div class="titleArea clearFix">
+                <p class="titMeta">전체</p>
+                <div class="meta">
+                    <div class="col"><em>10</em><span>건</span></div>
+                </div>
+
+            </div>
+            <!--//titleArea-->
+
+            <!--table-->
+            <div class="table hover">
+                <table>
+                    <caption>공지사항 목록</caption>
+                    <colgroup>
+                        <col style="width:64px;">
+                        <col style="width:auto">
+                        <col style="width:120px">
+                        <col style="width:212px">
+                        <col style="width:207px">
+                        <col style="width:171px">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">순번</th>
+                        <th scope="col">아이디</th>
+                        <th scope="col">사용자명</th>
+                        <th scope="col">신청일</th>
+                        <th scope="col">처리일</th>
+                        <th scope="col">상태구분</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="lightGray">1</span></td>
+                        <td>user01</td>
+                        <td>홍길동</td>
+                        <td>2020.06.11</td>
+                        <td>2020.06.11</td>
+                        <td>미승인</td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">2</span></td>
+                        <td>user01</td>
+                        <td>홍길동</td>
+                        <td>2020.06.11</td>
+                        <td>2020.06.11</td>
+                        <td>미승인</td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">3</span></td>
+                        <td>user01</td>
+                        <td>홍길동</td>
+                        <td>2020.06.11</td>
+                        <td>2020.06.11</td>
+                        <td>미승인</td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">4</span></td>
+                        <td>user01</td>
+                        <td>홍길동</td>
+                        <td>2020.06.11</td>
+                        <td>2020.06.11</td>
+                        <td>미승인</td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">5</span></td>
+                        <td>user01</td>
+                        <td>홍길동</td>
+                        <td>2020.06.11</td>
+                        <td>2020.06.11</td>
+                        <td>미승인</td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">6</span></td>
+                        <td>user01</td>
+                        <td>홍길동</td>
+                        <td>2020.06.11</td>
+                        <td>2020.06.11</td>
+                        <td>미승인</td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">7</span></td>
+                        <td>user01</td>
+                        <td>홍길동</td>
+                        <td>2020.06.11</td>
+                        <td>2020.06.11</td>
+                        <td>미승인</td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">8</span></td>
+                        <td>user01</td>
+                        <td>홍길동</td>
+                        <td>2020.06.11</td>
+                        <td>2020.06.11</td>
+                        <td>미승인</td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">9</span></td>
+                        <td>user01</td>
+                        <td>홍길동</td>
+                        <td>2020.06.11</td>
+                        <td>2020.06.11</td>
+                        <td>미승인</td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">10</span></td>
+                        <td>user01</td>
+                        <td>홍길동</td>
+                        <td>2020.06.11</td>
+                        <td>2020.06.11</td>
+                        <td>미승인</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//table-->
+
+            <!--pageBtn-->
+            <div class="pageBtn">
+                <!--pagination-->
+                <div class="pagination">
+                    <button type="button" class="btnFirst"><span class="hidden">처음으로</span></button>
+                    <button type="button" class="btnPrev"><span class="hidden">이전</span></button>
+                    <a href="/" class="active">1</a>
+                    <a href="/">2</a>
+                    <a href="/">3</a>
+                    <a href="/">4</a>
+                    <a href="/">5</a>
+                    <a href="/">6</a>
+                    <a href="/">7</a>
+                    <a href="/">8</a>
+                    <a href="/">9</a>
+                    <a href="/">10</a>
+                    <button type="button" class="btnNext"><span class="hidden">다음</span></button>
+                    <button type="button" class="btnLast"><span class="hidden">마지막으로</span></button>
+                </div>
+                <!--pagination-->
+
+            </div>
+            <!--//pageBtn-->
+
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+    @@include('include/footer.html')
+</div>
+<!--//wrap-->
+
+</body>
+</html>

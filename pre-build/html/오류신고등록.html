@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_고객지원.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_맵갤러리.html')
+        <!--content-->
+        <div id="content" class="errNew">
+            <h3 class="titPage">페이지제목</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+            <h4 class="titSub">오류 신고 등록</h4>
+            <!--table-->
+            <div class="table">
+                <table>
+                    <caption>오류 신고 등록</caption>
+                    <colgroup>
+                        <col style="width:130px;">
+                        <col style="width:387px;">
+                        <col style="width:137px;">
+                        <col style="width:auto">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row"><label for="input01">제목</label></th>
+                        <td colspan="3">
+                            <input type="text" id="input01"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">작성자</th>
+                        <td class="txtLeft">등록자</td>
+                        <th scope="row">등록일</th>
+                        <td class="txtLeft">2020-06-30</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">맵갤러리</th>
+                        <td colspan="3" class="txtLeft">
+                            <b>맵갤러리 제목</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="input02">첨부파일</label></th>
+                        <td colspan="3">
+                            <div class="fileSelect">
+                                <input class="fileLocal" value="" disabled="disabled">
+                                <label for="input02" class="btnFileSelect">찾아보기</label>
+                                <input type="file" id="input02" class="fileHidden">
+                            </div>
+                            <textarea style="height:73px;" disabled></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="input02">내용</label></th>
+                        <td colspan="3">
+                            <textarea name=""   cols="30" rows="10" style="height:200px;" placeholder="맵갤러리 평가 내용입니다."></textarea>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//table-->
+            <!--<div class="meaning mScroll" style="height:138px;">
+                <p>맵갤러리 평가 내용입니다.</p>
+            </div>-->
+            <div class="btnArea">
+                <button type="button" class="lightGreyType">닫기</button>
+                <button type="button" class="blueType">등록</button>
+            </div>
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+
+    @@include('include/footer.html')
+
+
+</div>
+<!--//wrap-->
+</body>
+</html>

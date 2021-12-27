@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_회원안내.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_회원안내.html')
+        <!--content-->
+        <div id="content">
+            <h3 class="titPage">회원가입</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+
+
+            <!--accountWrap-->
+            <div class="accountWrap" id="accountArea">
+
+                <!--accountBox-->
+                <div class="accountBox">
+                    <!--accountProgress-->
+                    <div class="accountProgress">
+                        <strong>회원가입</strong>
+                        <img src="../images/common/bg-account-progress-01.png" alt="현재절차 : 약관조회">
+                    </div>
+                    <!--//accountProgress-->
+                    <!--accountTerms-->
+                    <div class="accountTerms">
+                        <h4 class="titSub">이용약관에 대한 동의</h4>
+                        <div class="article">
+                            <p class="art-dep1">1. 개인정보의 처리 목적</p>
+                            <p>공간정보Dream은 개인정보를 다음의 목적을 위해 처리합니다.<br> 처리한 개인정보는 다음의 목적이외의 용도로는 사용되지 않으며 이용 목적이 변경될 시에는 사전 동의를 구할 예정입니다.</p>
+                            <ol>
+                                <li>
+                                    가. 홈페이지 회원가입 및 관리
+                                    <ol>
+                                        <li>회원 가입의사 확인, 회원제 서비스 제공에 따른 본인 식별·인증, 회원자격 유지·관리, 제한적 본인확인제 시행에 따른 본인확인, 서비스 부정이용 방지, 각종 고지·통지, 고충처리, 분쟁 조정을 위한 기록 보존 등을 목적으로 개인정보를 처리합니다. </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    나. 사무 처리
+                                    <ol>
+                                        <li>신원 확인, 사실조사를 위한 연락·통지, 처리결과 통보 등을 목적으로 개인정보를 처리합니다.</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                            <p class="art-dep1">2. 처리하는 개인정보의 항목 작성</p>
+                            <ol>
+                                <li>
+                                    ① 공간정보Dream 시스템은 다음의 개인정보 항목을 처리하고 있습니다.
+                                    <ol>
+                                        <li><u><font size="3" style="color: #4578cb;font-weight: bold">- 필수항목 : 사용자ID, 사용자명, 소속기관, 휴대폰번호, 이메일</font></u></li>
+                                    </ol>
+                                </li>
+                            </ol>
+                            <p class="art-dep1">3. 개인정보의 처리 및 보유 기간</p>
+                            <ol>
+                                <li>
+                                    ① 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집시에 동의 받은 개인정보 보유, 이용기간 내에서 개인정보를 처리, 보유합니다.
+                                    <ol>
+                                        <li></li>
+                                        <li></li>
+                                    </ol>
+                                </li>
+                            </ol>
+                            <p class="art-dep1">4. 동의 거부 권리 및 동의 거부에 따른 불이익</p>
+                            <ol>
+                                <li>- 개인정보보호법 제15조(개인정보의 수집·이용 동의)에 의거하여 개인정보 수집 동의를 거부할 권리는 있으나, 동의 거부 시 회원가입 및 일부 서비스를 제공받지 못하실 수 있습니다.</li>
+                                <li>- 필수항목에 해당하는 정보를 입력하시지 않는 경우 회원가입이 불가능하나, 선택항목에 해당하는 정보를 입력하지 않으셔도 회원가입 및 서비스 이용에는 제한이 없습니다.</li>
+                                <li>- 다만 불가피하게 수집이 필요한 경우 반드시 사전에 동의 절차를 거치도록 하겠습니다.</li>
+                            </ol>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="check01" name="terms" class="hidden"/>
+                            <label for="check01"><span class="blue">(필수)</span> 이용약관에 동의합니다.</label>
+                        </div>
+                    </div>
+                    <!--//accountTerms-->
+                    <!--accountTerms-->
+                    <div class="accountTerms">
+                        <h4 class="titSub">개인정보(선택정보) 수집 및 이용에 대한 동의</h4>
+                        <div class="article">
+                            <p class="art-dep1">처리하는 개인정보(선택정보)의 항목작성</p>
+                            공간정보Dream은 다음의 개인정보(선택정보) 항목을 처리하고 있습니다. 선택항목에 해당하는 정보를 입력하지 않으셔도 회원가입 및 서비스 이용에는 제한이 없습니다.
+                            <ol>
+                                <li>
+                                    공간정보Dream 시스템은 다음의 선택정보 항목을 처리하고 있습니다.
+                                    <ol>
+                                        <li><u><font size="3" style="color: #4578cb;font-weight: bold">- 선택항목 : 전화번호</font></u></li>
+                                    </ol>
+                                    ※ 선택정보를 입력하지 않은 경우에도 서비스 이용 제한은 없습니다.
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id="check02" name="terms" class="hidden"/>
+                            <label for="check02"><span class="blue">(필수)</span> 개인정보(선택정보) 수집 및 이용에 대해 동의합니다.</label>
+                        </div>
+                    </div>
+                    <!--//accountTerms-->
+                    <!--accountTerms-->
+                    <div class="accountTerms">
+                        <!--accountAgree-->
+                        <div class="accountAgree">
+                            <div class="checkbox">
+                                <input type="checkbox" id="check03" class="hidden"/>
+                                <label for="check03"><span class="blue">(필수)</span> 개인정보(선택정보) 수집 및 이용에 대해 동의합니다.</label>
+                            </div>
+                        </div>
+                        <!--//accountAgree-->
+                    </div>
+                    <!--//accountTerms-->
+                    <div class="btnArea">
+                        <button type="button" class="lightGray">메인으로</button>
+                        <button type="button">다음단계</button>
+                    </div>
+                </div>
+                <!--//accountBox-->
+            </div>
+            <!--//accountWrap-->
+
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+    @@include('include/footer.html')
+</div>
+<!--//wrap-->
+
+</body>
+</html>

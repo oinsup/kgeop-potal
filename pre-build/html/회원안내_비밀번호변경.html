@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_회원안내.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_회원안내.html')
+        <!--content-->
+        <div id="content">
+            <h3 class="titPage">비밀번호 변경안내</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+
+            <!--accountWrap-->
+            <div class="accountWrap">
+                <p class="title">안전한 개인정보 보호를 위해 <span class="txtBlue">비밀번호를 변경</span>하여 주세요.</p>
+                <p class="subTxt">회원님은 <span class="txtBlue">최근 3개월(90일)</span> 동안 비밀번호를 변경하지 않으셨습니다.<br /><span class="txtBlue">정기적인 비밀번호 변경</span>으로 회원님의 개인정보를 보호해 주세요.</p>
+                <!--accountInner-->
+                <div class="accountInner" style="display: block;">
+                    <p class="txtInfo txtCenter icoPw">비밀번호는 9~12자리로 입력해주세요. (영문, 숫자, 특수문자 포함)</p>
+                    <div class="inputArea">
+                        <input type="password" placeholder="현재 비밀번호" />
+                        <input type="password" placeholder="신규 비밀번호" />
+                        <span class="helpTxt">사용가능한 비밀번호입니다</span>
+                        <input type="password" placeholder="신규 비밀번호 확인" />
+                        <span class="helpTxt wrong">비밀번호가 일치하지 않습니다</span>
+                    </div>
+                    <div class="btnArea">
+                        <button type="button">변경하기</button>
+                        <button type="button" class="lightGray">90일뒤에 변경하기</button>
+                    </div>
+                </div>
+                <!--//accountInner-->
+
+            </div>
+            <!--//accountWrap-->
+
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+    @@include('include/footer.html')
+</div>
+<!--//wrap-->
+
+
+
+<!-- 얼럿 -->
+<div class="alert" style="left:50%;top:400px;">
+    <button type="button" class="btnClose">
+        <span class="hidden">닫기</span>
+    </button>
+    <!--alertCont-->
+    <div class="alertCont">
+        <div class="message">
+            <div class="imgArea imgCheck"></div>
+            <p>비밀번호 재설정이 완료되었습니다.</p>
+        </div>
+        <div class="btnArea txt-center">
+            <button type="button" class="blueType">확인</button>
+        </div>
+    </div>
+    <!--//alertCont-->
+</div>
+<!-- //얼럿-->
+
+
+
+<!-- 얼럿 -->
+<div class="alert" style="left:50%;top:200px;">
+    <button type="button" class="btnClose">
+        <span class="hidden">닫기</span>
+    </button>
+    <!--alertCont-->
+    <div class="alertCont">
+        <div class="message">
+            <div class="textArea">
+                <p>내용</p>
+            </div>
+        </div>
+        <div class="btnArea txt-center">
+            <button type="button" class="blueType">확인</button>
+            <button type="button" class="lightGreyType">취소</button>
+        </div>
+    </div>
+    <!--//alertCont-->
+</div>
+<!-- //얼럿-->
+
+
+
+</body>
+</html>

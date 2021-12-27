@@ -1,0 +1,5 @@
+pre-build/node_modules
+pre-build/.idea
+pre-build/.DS_Store
+.idea
+.DS_Store

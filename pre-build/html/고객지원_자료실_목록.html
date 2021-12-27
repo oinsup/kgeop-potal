@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_고객지원.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_정보드림.html')
+        <!--content-->
+        <div id="content">
+            <h3 class="titPage">자료실</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+
+            <!--searchBox-->
+            <div class="searchBox type4 clearFix">
+                <div class="col">
+                    <label for="ss01">맵갤러리 제목</label>
+                    <input type="text" id="ss01" style="width:243px;">
+                </div>
+                <div class="col">
+                    <label for="ss02">기관</label>
+                    <select id="ss02" style="width:141px;">
+                        <option selected>선택</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="ss03">분야</label>
+                    <select id="ss03" style="width:141px;">
+                        <option selected>선택</option>
+                    </select>
+                </div>
+                <div class="col dateType">
+                    <label for="ss04">등록일시</label>
+                    <div class="checkbox">
+                        <input type="checkbox" id="check01" class="hidden"/>
+                        <label for="check01"></label>
+                    </div>
+                    <input type="text" id="ss04" class="cal" style="width:132px"/><span>~</span>
+                    <input type="text"   class="cal" style="width:132px"/>
+                </div>
+
+                <div class="btnSearch fixed">
+                    <button type="button">검색</button>
+                </div>
+            </div>
+            <!--//searchBox-->
+            <!--titleArea-->
+            <div class="titleArea clearFix">
+                <p class="titMeta">전체</p>
+                <div class="meta">
+                    <div class="col"><em>10</em><span>건</span></div>
+                </div>
+
+            </div>
+            <!--//titleArea-->
+
+            <!--table-->
+            <div class="table hover">
+                <table>
+                    <caption>공지사항 목록</caption>
+                    <colgroup>
+                        <col style="width:62px;">
+                        <col style="width:auto">
+                        <col style="width:75px">
+                        <col style="width:96px">
+                        <col style="width:115px">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">순번</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">첨부</th>
+                        <th scope="col">작성자</th>
+                        <th scope="col">등록일자</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="lightGray">1</span></td>
+                        <td class="txtLeft">공간정보 드림 시스템 오픈하였습니다</td>
+                        <td><a href="/" class="btnFile"><span class="hidden">첨부파일</span></a></td>
+                        <td>관리자</td>
+                        <td><span class="lightGray">2020.06.11</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">2</span></td>
+                        <td class="txtLeft">공간정보 드림 시스템 오픈하였습니다</td>
+                        <td></td>
+                        <td>관리자</td>
+                        <td><span class="lightGray">2020.06.11</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">3</span></td>
+                        <td class="txtLeft">공간정보 드림 시스템 오픈하였습니다</td>
+                        <td></td>
+                        <td>관리자</td>
+                        <td><span class="lightGray">2020.06.11</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">4</span></td>
+                        <td class="txtLeft">공간정보 드림 시스템 오픈하였습니다</td>
+                        <td></td>
+                        <td>관리자</td>
+                        <td><span class="lightGray">2020.06.11</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">5</span></td>
+                        <td class="txtLeft">공간정보 드림 시스템 오픈하였습니다</td>
+                        <td></td>
+                        <td>관리자</td>
+                        <td><span class="lightGray">2020.06.11</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">6</span></td>
+                        <td class="txtLeft">공간정보 드림 시스템 오픈하였습니다</td>
+                        <td></td>
+                        <td>관리자</td>
+                        <td><span class="lightGray">2020.06.11</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">7</span></td>
+                        <td class="txtLeft">공간정보 드림 시스템 오픈하였습니다</td>
+                        <td></td>
+                        <td>관리자</td>
+                        <td><span class="lightGray">2020.06.11</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">8</span></td>
+                        <td class="txtLeft">공간정보 드림 시스템 오픈하였습니다</td>
+                        <td></td>
+                        <td>관리자</td>
+                        <td><span class="lightGray">2020.06.11</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">9</span></td>
+                        <td class="txtLeft">공간정보 드림 시스템 오픈하였습니다</td>
+                        <td></td>
+                        <td>관리자</td>
+                        <td><span class="lightGray">2020.06.11</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="lightGray">10</span></td>
+                        <td class="txtLeft">공간정보 드림 시스템 오픈하였습니다</td>
+                        <td></td>
+                        <td>관리자</td>
+                        <td><span class="lightGray">2020.06.11</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//table-->
+
+            <!--pageBtn-->
+            <div class="pageBtn">
+                <!--pagination-->
+                <div class="pagination">
+                    <button type="button" class="btnFirst"><span class="hidden">처음으로</span></button>
+                    <button type="button" class="btnPrev"><span class="hidden">이전</span></button>
+                    <a href="/" class="active">1</a>
+                    <a href="/">2</a>
+                    <a href="/">3</a>
+                    <a href="/">4</a>
+                    <a href="/">5</a>
+                    <a href="/">6</a>
+                    <a href="/">7</a>
+                    <a href="/">8</a>
+                    <a href="/">9</a>
+                    <a href="/">10</a>
+                    <button type="button" class="btnNext"><span class="hidden">다음</span></button>
+                    <button type="button" class="btnLast"><span class="hidden">마지막으로</span></button>
+                </div>
+                <!--pagination-->
+
+            </div>
+            <!--//pageBtn-->
+
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+    @@include('include/footer.html')
+</div>
+<!--//wrap-->
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_맵갤러리.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_맵갤러리.html')
+        <!--content-->
+        <div id="content">
+            <h3 class="titPage">맵갤러리</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+            <section class="cont pos-r">
+                <!--box-->
+                <div class="box detail clearFix">
+                    <div class="thumbArea left">
+                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                    </div>
+                    <!--boxWrap-->
+                    <div class="boxWrap right">
+                        <div class="textArea">
+                            <span class="tag">분류내용</span>
+                            <span class="tag greenType">분류내용</span>
+                            <span class="tag greyType">분류내용</span>
+                            <span class="tag blackType">분류내용</span>
+                            <span class="tag greenLine">분류내용</span>
+                            <span class="tag blueLine">분류내용</span>
+                            <strong>지도제목입니다.지도제목입니다.지도제목입니다.</strong>
+                            <button type="button" class="blueType">지도보기</button>
+                            <div class="row bottom">
+                                <p>관리자
+                                    <span class="bar">|</span>
+                                    <span class="date">2020-09-25</span>
+                                </p>
+                                <div class="btnOptArea">
+                                    <button type="button" class="btnRecommend">추천</button>
+                                    <button type="button" class="btnFavorite">즐겨찾기</button>
+                                </div>
+                            </div>
+                            <div class="row clearFix">
+                                <div class="star">
+                                    <span class="starBg"></span>
+                                    <span class="starProgress" style="width:60%"></span>
+                                </div>
+                                <span class="starPoint">3.0</span>
+                                <div class="recommendArea right">
+                                    <div class="icoGroup">
+                                        <b class="recommend best"><span class="tooltip">추천수</span>8</b>
+                                        <span class="bar">|</span>
+                                        <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>URL
+                                    <span class="bar">|</span>
+                                    <a href="#">http://www.aaaaa.go.kr/aaaaaaaa/aaaaaaa.do?aaa=aaaaaaaaa</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//boxWrap-->
+                </div>
+                <!--//box-->
+            </section>
+            <section class="cont">
+                <h4 class="titSub">파일데이터 정보</h4>
+                <div class="explaneBox">
+                    <p>맵갤러리 설명을 위한 영역입니다.</p>
+                </div>
+            </section>
+
+            <section class="cont">
+                <h4 class="titSub">사용평가</h4>
+                <!--commentBox-->
+                <div class="commentBox">
+                    <!--commentWrap (등록후)-->
+                    <div class="commentWrap clearFix">
+                        <strong>사용평가</strong>
+                        <span class="date">2020-10-25</span>
+                        <div class="star large">
+                            <span class="starBg"></span>
+                            <span class="starProgress" style="width:60%"></span>
+                        </div>
+                        <span class="starPoint">3.0</span>
+
+                        <!--commentGroup-->
+                        <div class="commentGroup clearFix">
+                            <div class="confirm">
+                                <p>등록테스트입니다</p>
+                            </div>
+                        </div>
+                        <div class="btnGroup">
+                            <button type="button" class="btnListEdit type2"><span class="hidden">수정</span></button>
+                            <button type="button" class="btnListRemove type2"><span class="hidden">삭제</span></button>
+                        </div>
+                    </div>
+                    <!--//commentWrap-->
+
+                    <!--commentWrap (등록전)-->
+                    <div class="commentWrap">
+                        <strong>사용평가</strong>
+                        <div class="star large">
+                            <span class="starBg"></span>
+                            <span class="starProgress" style="width:60%"></span>
+                        </div>
+                        <span class="starPoint">3.0</span>
+
+                        <!--commentGroup-->
+                        <div class="commentGroup clearFix">
+                            <textarea placeholder="평가 내용을 입력하는 창입니다. 한글기준 100자 이내로 작성해 주세요."></textarea>
+                            <button type="button" class="greyType2">등록</button>
+                        </div>
+                        <!--//commentGroup-->
+                        <div class="sub">
+                            <i class="right">( <span class="blue">0</span> / 20 byte )</i>
+                        </div>
+                    </div>
+                    <!--//commentWrap-->
+                    <div class="btnArea">
+                        <button type="button" class="lightGreenType">즐겨찾기</button>
+                        <button type="button" class="lightGreenType">추천 <span class="number">5</span></button>
+                        <button type="button" class="lightGreyType">오류목록 <span class="number">5</span></button>
+                        <button type="button" class="blueType">목록</button>
+                    </div>
+                </div>
+                <!--//commentBox-->
+                <!--replyList-->
+                <div class="replyList">
+                    <!--replyBox-->
+                    <div class="replyBox">
+                        <!--replyWrap-->
+                        <div class="replyWrap">
+                            <div class="row">
+                                <div class="star">
+                                    <span class="starBg"></span>
+                                    <span class="starProgress" style="width:60%"></span>
+                                </div>
+                                <span class="starPoint">3.0</span>
+                                <span class="userName">김**</span>
+                                <span class="bar">|</span>
+                                <span class="date">2020-09-05</span>
+                            </div>
+                            <div class="row">
+                                <p class="titReply">평가자가 입력한 평가 내용이 표출 됩니다. 평가자가 입력한 평가 내용이 표출 됩니다.</p>
+                            </div>
+                        </div>
+                        <!--//replyWrap-->
+                    </div>
+                    <!--//replyBox-->
+                    <!--replyBox-->
+                    <div class="replyBox">
+                        <!--replyWrap-->
+                        <div class="replyWrap">
+                            <div class="row">
+                                <div class="star">
+                                    <span class="starBg"></span>
+                                    <span class="starProgress" style="width:60%"></span>
+                                </div>
+                                <span class="starPoint">3.0</span>
+                                <span class="userName">김**</span>
+                                <span class="bar">|</span>
+                                <span class="date">2020-09-05</span>
+                            </div>
+                            <div class="row">
+                                <p class="titReply">평가자가 입력한 평가 내용이 표출 됩니다. 평가자가 입력한 평가 내용이 표출 됩니다.</p>
+                            </div>
+                        </div>
+                        <!--//replyWrap-->
+                    </div>
+                    <!--//replyBox-->
+                </div>
+                <!--//replyList-->
+            </section>
+            <section class="cont error">
+
+                <h4 class="titSub">오류 신고 목록</h4>
+                <!--table-->
+                <div class="table">
+                    <table>
+                        <caption>오류 신고 목록</caption>
+                        <colgroup>
+                            <col style="width:50px;">
+                            <col style="width:auto">
+                            <col style="width:103px;">
+                            <col style="width:92px;">
+                            <col style="width:100px;">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">신고제목</th>
+                            <th scope="col">신고자</th>
+                            <th scope="col">신고일자</th>
+                            <th scope="col">처리상태</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>신고 제목입니다.</td>
+                            <td>사용자01</td>
+                            <td>2020-06-21</td>
+                            <td><span class="blue">완료</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>신고 제목입니다.</td>
+                            <td>사용자01</td>
+                            <td>2020-06-21</td>
+                            <td><span class="red">신고</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+                <!--table-->
+                <div class="table">
+                    <table>
+                        <caption>오류 신고 목록</caption>
+                        <tbody>
+                        <tr>
+                            <td><div class="empty">게시물이 없습니다.</div></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--table-->
+                <div class="btnArea">
+                    <button type="button" class="lightGreyType">오류 신고</button>
+                    <button type="button" class="blueType">목록</button>
+                </div>
+
+            </section>
+        </div>
+        <!--//content-->
+    </div>
+    <!--//container-->
+
+    @@include('include/footer.html')
+
+
+</div>
+<!--//wrap-->
+</body>
+</html>

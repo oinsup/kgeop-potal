@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_연관검색어.html')
+    <!--@@include('include/breadcrumb.html')-->
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_모두드림.html')
+        <!--content-->
+        <div id="content">
+            <section class="cont">
+                <div class="dataInformation">
+                    <!--dataWrap-->
+                    <div class="dataWrap">
+                        <h4>데이터현황판</h4>
+                        <i>2020년 10월 20일 16:00</i>
+                        <!--dataContWrap-->
+                        <div class="dataContWrap clearFix">
+                            <!--dataCont-->
+                            <div class="dataCont">
+                                <!--box-->
+                                <div class="box">
+                                    <strong>보유</strong>
+                                    <img src="../images/dummy/bg-dummy-datagraph-01.png">
+                                    <p><spann class="counting">1,458</spann> 종</p>
+                                    <p><spann class="counting blue">527,852</spann> 건</p>
+                                </div>
+                                <!--box-->
+                            </div>
+                            <!--//dataCont-->
+                            <!--dataCont-->
+                            <div class="dataCont">
+                                <!--box-->
+                                <div class="box">
+                                    <strong>수집</strong>
+                                    <img src="../images/dummy/bg-dummy-datagraph-02.png">
+                                    <p><spann class="counting">1,458</spann> 종</p>
+                                    <p><spann class="counting green">527,852</spann> 건</p>
+                                </div>
+                                <!--box-->
+                            </div>
+                            <!--//dataCont-->
+                            <!--dataCont-->
+                            <div class="dataCont">
+                                <!--box-->
+                                <div class="box">
+                                    <strong>제공</strong>
+                                    <img src="../images/dummy/bg-dummy-datagraph-03.png">
+                                    <p><spann class="counting">1,458</spann> 종</p>
+                                    <p><spann class="counting purple">527,852</spann> 건</p>
+                                </div>
+                                <!--box-->
+                            </div>
+                            <!--//dataCont-->
+                            <!--dataCont-->
+                            <div class="dataCont total">
+                                <!--box-->
+                                <div class="box">
+                                    <ul class="clearFix">
+                                        <li class="purple">
+                                            <b>공간</b>
+                                            <span class="count">654</span>
+                                            <span class="percent">69 %</span>
+                                            <div class="progressBar">
+                                                <div class="progress" style="width:60%"></div>
+                                            </div>
+                                        </li>
+                                        <li class="green">
+                                            <b>속성</b>
+                                            <span class="count">654</span>
+                                            <span class="percent">69 %</span>
+                                            <div class="progressBar">
+                                                <div class="progress" style="width:60%"></div>
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <b>공개</b>
+                                            <span class="count">654</span>
+                                            <span class="percent">69 %</span>
+                                            <div class="progressBar">
+                                                <div class="progress" style="width:60%"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <b>비공개</b>
+                                            <span class="count">654</span>
+                                            <span class="percent">69 %</span>
+                                            <div class="progressBar">
+                                                <div class="progress" style="width:60%"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--box-->
+                            </div>
+                            <!--//dataCont-->
+
+                        </div>
+                        <!--//dataContWrap-->
+                    </div>
+                    <!--//dataWrap-->
+                </div>
+            </section>
+
+            <section class="cont list">
+                <h4 class="titSub">보유현황
+                    <i>※ 데이터 특성별 보유현황 및 상세정보를 제공합니다.</i>
+                </h4>
+
+
+
+                <!--toggleStyleWrap-->
+                <div class="toggleStyleWrap">
+                    <!--toggleStyle-->
+                    <div class="toggleStyle">
+                        <button type="button" class="graph active"></button>
+                        <button type="button" class="list"></button>
+                    </div>
+                    <!--//toggleStyle-->
+                    <!--contStyle-->
+                    <div class="contStyle active">
+
+                        <!--infoArea-->
+                        <div class="infoArea">
+                            <!--infoWrap-->
+                            <div class="infoWrap clearFix">
+                                <!--left-->
+                                <div class="left">
+                                    <div class="row">
+                                        <div class="box col3">
+                                            <strong>년도별 데이터 보유현황</strong>
+                                            <div class="graphArea">
+                                                <img src="../images/common/bg-dummy-graph-sec1.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="box col">
+                                            <strong>공개구분별 데이터 종수</strong>
+                                            <div class="graphArea">
+                                                <img src="../images/common/bg-dummy-graph-sec2.png">
+                                            </div>
+                                        </div>
+                                        <div class="box col">
+                                            <strong>기관별 데이터 종수</strong>
+                                            <div class="graphArea">
+                                                <img src="../images/common/bg-dummy-graph-sec3.png">
+                                            </div>
+                                        </div>
+                                        <div class="box col">
+                                            <strong>정보 보유 기관 현황</strong>
+                                            <div class="graphArea">
+                                                <img src="../images/common/bg-dummy-graph-sec4.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//left-->
+                                <!--right-->
+                                <div class="right">
+                                    <div class="box">
+                                        <div class="graphArea">
+                                            <img src="../images/common/bg-dummy-graph-sec5.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//right-->
+                                <div class="box col4">
+                                    <strong>분류별 데이터 종수</strong>
+                                    <div class="graphArea">
+                                        <img src="../images/common/bg-dummy-graph-sec6.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//infoWrap-->
+                        </div>
+                        <!--//infoArea-->
+                    </div>
+                    <!--//contStyle-->
+                    <!--contStyle-->
+                    <div class="contStyle">
+                        <!--infoArea-->
+                        <div class="infoArea">
+                            <!--infoWrap-->
+                            <div class="infoWrap">
+                                <strong>국토교통부 부동산종합공부시스템 보유 데이터 현황</strong>
+                                <i>※ <span class="blue">공개제한</span>은 승인시 활용 가능합니다</i>
+                                <!--listWrap-->
+                                <div class="listWrap">
+                                    <!--listBox-->
+                                    <div class="listBox">
+                                        <!--boxWrap-->
+                                        <div class="boxWrap">
+                                            <div class="textArea">
+                                                <span class="tag blueLine">국토관리 · 지역개발</span>
+                                                <span class="tag greenLine">토지</span>
+                                                <span class="tag">공개</span>
+                                                <span class="tag greyType">비공개</span>
+                                                <span class="tag blackType">공개제한</span>
+                                                <strong>토지(임야) 기본</strong>
+                                                <p><span class="exp">설명</span>토지(임야)대장에 등록된 1필지의 소유자가 2인 이상일 때의 지분 등의 정보</p>
+                                            </div>
+                                            <div class="recommendArea">
+                                                <div class="icoGroup">
+                                                    <b class="recommend down"><span class="tooltip">다운수</span>9</b>
+                                                    <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--//boxWrap-->
+                                    </div>
+                                    <!--//listBox-->
+                                    <!--listBox-->
+                                    <div class="listBox">
+                                        <!--boxWrap-->
+                                        <div class="boxWrap">
+                                            <div class="textArea">
+                                                <span class="tag blueLine">국토관리 · 지역개발</span>
+                                                <span class="tag greenLine">토지</span>
+                                                <span class="tag">공개</span>
+                                                <span class="tag greyType">비공개</span>
+                                                <span class="tag blackType">공개제한</span>
+                                                <strong>토지(임야) 기본</strong>
+                                                <p><span class="exp">설명</span>토지(임야)대장에 등록된 1필지의 소유자가 2인 이상일 때의 지분 등의 정보</p>
+                                            </div>
+                                            <div class="recommendArea">
+                                                <div class="icoGroup">
+                                                    <b class="recommend down"><span class="tooltip">다운수</span>9</b>
+                                                    <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--//boxWrap-->
+                                    </div>
+                                    <!--//listBox-->
+                                    <!--listBox-->
+                                    <div class="listBox">
+                                        <!--boxWrap-->
+                                        <div class="boxWrap">
+                                            <div class="textArea">
+                                                <span class="tag blueLine">국토관리 · 지역개발</span>
+                                                <span class="tag greenLine">토지</span>
+                                                <span class="tag">공개</span>
+                                                <span class="tag greyType">비공개</span>
+                                                <span class="tag blackType">공개제한</span>
+                                                <strong>토지(임야) 기본</strong>
+                                                <p><span class="exp">설명</span>토지(임야)대장에 등록된 1필지의 소유자가 2인 이상일 때의 지분 등의 정보</p>
+                                            </div>
+                                            <div class="recommendArea">
+                                                <div class="icoGroup">
+                                                    <b class="recommend down"><span class="tooltip">다운수</span>9</b>
+                                                    <b class="recommend people"><span class="tooltip">조회수</span>9</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--//boxWrap-->
+                                    </div>
+                                    <!--//listBox-->
+                                </div>
+                                <!--//listWrap-->
+                            </div>
+                            <!--//infoWrap-->
+                        </div>
+                        <!--//infoArea-->
+                    </div>
+                    <!--//contStyle-->
+                </div>
+                <!--//toggleStyleWrap-->
+
+
+
+
+
+            </section>
+        </div>
+        <!--//content-->
+
+    </div>
+    <!--//container-->
+    @@include('include/footer.html')
+</div>
+<!--//wrap-->
+
+</body>
+</html>

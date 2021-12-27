@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#header">주요메뉴 바로가기</a>
+    <a href="#content">본문 바로가기</a>
+    <a href="#lnb">지역메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    @@include('include/header_사용자관리.html')
+    <!--container-->
+    <div id="container">
+        <h2 class="hidden">본문 영역</h2>
+        @@include('include/lnb_사용자관리.html')
+        <!--content-->
+        <div id="content">
+            <h3 class="titPage">콘텐츠 관리</h3>
+            <div class="breadcrumb clearFix">
+                <div class="btnHome"><a href="/"><span class="hidden">홈으로</span></a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+                <div class="menuName"><a href="/">고객지원</a></div>
+            </div>
+            <section class="cont pos-r">
+                <!--tabContWrap-->
+                <div class="tabContWrap contManage type3">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList col3 clearFix">
+                            <li class="active">
+                                <a href="#">지도드림설정</a>
+                            </li>
+                            <li>
+                                <a href="#">내 지도드림 <span class="blue">00</span> 건</a>
+                            </li>
+                            <li>
+                                <a href="#">공유 지도드림 <span class="blue">00</span> 건</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont clearFix active">
+                        <div class="clearFix">
+                            <div class="tabLnb">
+                                <strong>
+                                    지도드림 초기 설정목록
+                                    <button type="button" class="btnAdd"><span class="hidden">추가</span></button>
+                                </strong>
+                                <ul>
+                                    <li>
+                                        <a href="#">국가공간정보</a>
+                                        <button type="button" class="btnRemove"><span class="hidden">삭제</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tableArea">
+                            <h4 class="titSub">수정화면</h4>
+                            <!--table-->
+                            <div class="table">
+                                <table>
+                                    <caption>수정화면</caption>
+                                    <colgroup>
+                                        <col style="width:130px;">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row"><label for="input01">제목</label></th>
+                                        <td class="txtLeft">
+                                            <input type="text" id="input01" style="width:263px"/>
+                                            <div class="checkbox type3">
+                                                <input type="checkbox" id="check01" class="hidden"/>
+                                                <label for="check01">지도드림 초기값으로 설정</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="sel01">행정구역</label></th>
+                                        <td class="txtLeft">
+                                            <select id="sel01" style="width:136px;">
+                                                <option>전체</option>
+                                            </select>
+                                            <select style="width:136px;">
+                                                <option>전체</option>
+                                            </select>
+                                            <select style="width:136px;">
+                                                <option>전체</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//table-->
+
+                            <div class="titleArea clearFix">
+
+                                <strong class="titTable">기본 레이어 설정</strong>
+                                <div class="btnArea">
+                                    <button type="button" class="lightGreyType btnRemove">선택삭제</button>
+                                    <button type="button" class="blueType btnAdd">레이어추가</button>
+                                </div>
+                            </div>
+
+                            <!--table-->
+                            <div class="table hover mScroll" style="height:369px;">
+                                <table>
+                                    <caption>기본 레이어 설정</caption>
+                                    <colgroup>
+                                        <col style="width:55px;">
+                                        <col style="width:64px;">
+                                        <col style="width:174px;">
+                                        <col style="width:305px;">
+                                        <col style="width:72px;">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            <div class="checkbox type3">
+                                                <input type="checkbox" id="chk00" class="hidden"/>
+                                                <label for="chk00"></label>
+                                            </div>
+                                        </th>
+                                        <th scope="col">종류</th>
+                                        <th scope="col">기관명</th>
+                                        <th scope="col">공유일시</th>
+                                        <th scope="col">On/Off</th>
+                                        <th scope="col">순서변경</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox type3">
+                                                <input type="checkbox" id="chk02" class="hidden"/>
+                                                <label for="chk02"></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="figure text2">텍스트</span>
+                                        </td>
+                                        <td class="txtLeft">
+                                            건물통합 (전국)
+                                        </td>
+                                        <td class="txtLeft">
+                                            NS센터에서 제공하는 건물통합(전국) 레이어 입니다.
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnShowHide"><span class="hidden">보이기/숨기기</span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnTableDown"><span class="hidden">아래로</span></button>
+                                            <button type="button" class="btnTableUp"><span class="hidden">위로</span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox type3">
+                                                <input type="checkbox" id="chk03" class="hidden"/>
+                                                <label for="chk03"></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="figure text2">텍스트</span>
+                                        </td>
+                                        <td class="txtLeft">
+                                            건물통합 (전국)
+                                        </td>
+                                        <td class="txtLeft">
+                                            NS센터에서 제공하는 건물통합(전국) 레이어 입니다.
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnShowHide"><span class="hidden">보이기/숨기기</span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnTableDown"><span class="hidden">아래로</span></button>
+                                            <button type="button" class="btnTableUp"><span class="hidden">위로</span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox type3">
+                                                <input type="checkbox" id="chk04" class="hidden"/>
+                                                <label for="chk04"></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="figure text2">텍스트</span>
+                                        </td>
+                                        <td class="txtLeft">
+                                            건물통합 (전국)
+                                        </td>
+                                        <td class="txtLeft">
+                                            NS센터에서 제공하는 건물통합(전국) 레이어 입니다.
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnShowHide"><span class="hidden">보이기/숨기기</span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnTableDown"><span class="hidden">아래로</span></button>
+                                            <button type="button" class="btnTableUp"><span class="hidden">위로</span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox type3">
+                                                <input type="checkbox" id="chk05" class="hidden"/>
+                                                <label for="chk05"></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="figure text2">텍스트</span>
+                                        </td>
+                                        <td class="txtLeft">
+                                            건물통합 (전국)
+                                        </td>
+                                        <td class="txtLeft">
+                                            NS센터에서 제공하는 건물통합(전국) 레이어 입니다.
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnShowHide"><span class="hidden">보이기/숨기기</span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnTableDown"><span class="hidden">아래로</span></button>
+                                            <button type="button" class="btnTableUp"><span class="hidden">위로</span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox type3">
+                                                <input type="checkbox" id="chk06" class="hidden"/>
+                                                <label for="chk06"></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="figure text2">텍스트</span>
+                                        </td>
+                                        <td class="txtLeft">
+                                            건물통합 (전국)
+                                        </td>
+                                        <td class="txtLeft">
+                                            NS센터에서 제공하는 건물통합(전국) 레이어 입니다.
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnShowHide"><span class="hidden">보이기/숨기기</span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnTableDown"><span class="hidden">아래로</span></button>
+                                            <button type="button" class="btnTableUp"><span class="hidden">위로</span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox type3">
+                                                <input type="checkbox" id="chk07" class="hidden"/>
+                                                <label for="chk07"></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="figure text2">텍스트</span>
+                                        </td>
+                                        <td class="txtLeft">
+                                            건물통합 (전국)
+                                        </td>
+                                        <td class="txtLeft">
+                                            NS센터에서 제공하는 건물통합(전국) 레이어 입니다.
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnShowHide"><span class="hidden">보이기/숨기기</span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnTableDown"><span class="hidden">아래로</span></button>
+                                            <button type="button" class="btnTableUp"><span class="hidden">위로</span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox type3">
+                                                <input type="checkbox" id="chk08" class="hidden"/>
+                                                <label for="chk08"></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="figure text2">텍스트</span>
+                                        </td>
+                                        <td class="txtLeft">
+                                            건물통합 (전국)
+                                        </td>
+                                        <td class="txtLeft">
+                                            NS센터에서 제공하는 건물통합(전국) 레이어 입니다.
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnShowHide"><span class="hidden">보이기/숨기기</span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnTableDown"><span class="hidden">아래로</span></button>
+                                            <button type="button" class="btnTableUp"><span class="hidden">위로</span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox type3">
+                                                <input type="checkbox" id="chk09" class="hidden"/>
+                                                <label for="chk09"></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="figure text2">텍스트</span>
+                                        </td>
+                                        <td class="txtLeft">
+                                            건물통합 (전국)
+                                        </td>
+                                        <td class="txtLeft">
+                                            NS센터에서 제공하는 건물통합(전국) 레이어 입니다.
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnShowHide"><span class="hidden">보이기/숨기기</span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnTableDown"><span class="hidden">아래로</span></button>
+                                            <button type="button" class="btnTableUp"><span class="hidden">위로</span></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox type3">
+                                                <input type="checkbox" id="chk10" class="hidden"/>
+                                                <label for="chk10"></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="figure text2">텍스트</span>
+                                        </td>
+                                        <td class="txtLeft">
+                                            건물통합 (전국)
+                                        </td>
+                                        <td class="txtLeft">
+                                            NS센터에서 제공하는 건물통합(전국) 레이어 입니다.
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnShowHide"><span class="hidden">보이기/숨기기</span></button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btnTableDown"><span class="hidden">아래로</span></button>
+                                            <button type="button" class="btnTableUp"><span class="hidden">위로</span></button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//table-->
+                        </div>
+                        </div>
+                        <div class="btnArea txtRight">
+                            <button type="button" class="blueType default">수정</button>
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont">
+                        <div class="mapGroup myMap clearFix">
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-no-img.png" alt="이미지가 없습니다"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <div class="row clearFix">
+                                                <span class="tag">전체공유</span>
+                                                <span class="date">2020-09-25</span>
+                                            </div>
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <div class="row clearFix">
+                                                <span class="tag greenType">부분공유</span>
+                                                <span class="date">2020-09-25</span>
+                                            </div>
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <div class="row clearFix">
+                                                <span class="tag greyType">비공유</span>
+                                                <span class="date">2020-09-25</span>
+                                            </div>
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <div class="row clearFix">
+                                                <span class="tag">전체공유</span>
+                                                <span class="date">2020-09-25</span>
+                                            </div>
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <div class="row clearFix">
+                                                <span class="tag">전체공유</span>
+                                                <span class="date">2020-09-25</span>
+                                            </div>
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <div class="row clearFix">
+                                                <span class="tag greenType">부분공유</span>
+                                                <span class="date">2020-09-25</span>
+                                            </div>
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <div class="row clearFix">
+                                                <span class="tag greyType">비공유</span>
+                                                <span class="date">2020-09-25</span>
+                                            </div>
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <div class="row clearFix">
+                                                <span class="tag">전체공유</span>
+                                                <span class="date">2020-09-25</span>
+                                            </div>
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                        </div>
+                        <!--scrollMore-->
+                        <div class="scrollMore">
+                            <div class="textArea">스크롤을 내리면 목록을 더 볼 수 있습니다.</div>
+                            <div class="icoScroll">
+                                <div class="icoScroll01"></div>
+                                <div class="arrowGroup">
+                                    <div class="icoScroll02"></div>
+                                    <div class="icoScroll03"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//scrollMore-->
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont">
+                        <div class="mapGroup shareMap clearFix">
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                            <p class="info"><span>공유시작일</span>2020-09-25</p>
+                                            <p class="info"><span>소유자</span>홍길동</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                            <p class="info"><span>공유시작일</span>2020-09-25</p>
+                                            <p class="info"><span>소유자</span>홍길동</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                            <p class="info"><span>공유시작일</span>2020-09-25</p>
+                                            <p class="info"><span>소유자</span>홍길동</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                            <!--box-->
+                            <div class="box">
+                                <div class="borderBox">
+                                    <div class="thumbArea">
+                                        <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                    </div>
+                                    <!--boxWrap-->
+                                    <div class="boxWrap">
+                                        <div class="textArea">
+                                            <strong>지도제목입니다.제목제목제목</strong>
+                                            <p>지도관련 상세설명글 입니다.</p>
+                                            <p class="info"><span>공유시작일</span>2020-09-25</p>
+                                            <p class="info"><span>소유자</span>홍길동</p>
+                                        </div>
+                                    </div>
+                                    <!--//boxWrap-->
+                                </div>
+                            </div>
+                            <!--//box-->
+                        </div>
+                        <!--scrollMore-->
+                        <div class="scrollMore">
+                            <div class="textArea">데이터 목록 마지막입니다.</div>
+                        </div>
+                        <!--//scrollMore-->
+                    </div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+
+            </section>
+        </div>
+        <!--//content-->
+
+        <!-- popup -->
+        <div class="popup layerSearch">
+            <!--popupHeader-->
+            <div class="popupHeader">
+                <div class="popupPd">
+                    <h3>레이어 검색</h3>
+                    <button type="button" class="btnClose">
+                        <span class="hidden">닫기</span>
+                    </button>
+                </div>
+            </div>
+            <!--//popupHeader-->
+            <!--popupMain-->
+            <div class="popupMain">
+                <!--popupPd(패딩영역)-->
+                <div class="popupPd clearFix">
+                    <!--popupLnb-->
+                    <div class="popupLnb left">
+                        <!-- division -->
+                        <div class="division">
+                            <strong>구분</strong>
+                            <ul class="depth mScroll">
+                                <li><a href="#">전체</a></li>
+                                <li><a href="#">국가공간정보</a></li>
+                                <li>
+                                    <a href="#" class="hasDepth">사용자데이터</a>
+                                    <ul class="innerDepth">
+                                        <li><a href="#">분석 · 연산</a></li>
+                                        <li><a href="#">업로드</a></li>
+                                        <li><a href="#">지오코딩</a></li>
+                                        <li><a href="#">부동산</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="hasDepth">공유데이터</a>
+                                    <ul class="innerDepth">
+                                        <li><a href="#">전체공유</a></li>
+                                        <li><a href="#">기관공유</a></li>
+                                        <li><a href="#">사용자 공유</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">통계데이터</a></li>
+                                <li><a href="#">DASS</a></li>
+                            </ul>
+                        </div>
+                        <!--// division -->
+                        <!-- filter -->
+                        <div class="filter">
+                            <strong>필터</strong>
+                            <ul class="depth">
+                                <li><a href="#">전체</a></li>
+                                <li><a href="#">점 (POINT)</a></li>
+                                <li><a href="#">선 (LINE)</a></li>
+                                <li><a href="#">면 (POLYGON)</a></li>
+                            </ul>
+                        </div>
+                        <!--// filter -->
+                    </div>
+                    <!--//popupLnb-->
+                    <!--popupMain-->
+                    <div class="popupRight left">
+                        <!--searchBox-->
+                        <div class="searchBox clearFix">
+                            <!--selectArea-->
+                            <div class="selectArea right clearFix">
+                                <select>
+                                    <option>전체</option>
+                                </select>
+                                <select>
+                                    <option>전체</option>
+                                </select>
+                                <select>
+                                    <option>전체</option>
+                                </select>
+                            </div>
+                            <!--//selectArea-->
+                            <input type="text" placeholder="">
+                            <div class="btnArea">
+                                <button type="button" class="greyType">검색</button>
+                            </div>
+                        </div>
+                        <!--//searchBox-->
+                        <!--titleArea-->
+                        <div class="titleArea clearFix">
+                            <p class="titMeta">전체</p>
+                            <div class="meta">
+                                <div class="col"><em>104</em><span>건</span></div>
+                            </div>
+                        </div>
+                        <!--//titleArea-->
+                        <!--table-->
+                        <div class="table layerResult mScroll" style="height:249px;">
+                            <table>
+                                <caption class="hidden">레이어 검색 결과</caption>
+                                <colgroup>
+                                    <col style="width:60px;" />
+                                    <col style="width:171px" />
+                                    <col style="width:321px" />
+                                    <col style="width:auto" />
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">종류</th>
+                                    <th scope="col">레이어명</th>
+                                    <th scope="col">레이어설명</th>
+                                    <th scope="col">추가/삭제</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><span class="figure polygon"><em class="hidden">면</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure point"><em class="hidden">점</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure polygon"><em class="hidden">면</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure line"><em class="hidden">선</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure text"><em class="hidden">텍스트</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure polygon"><em class="hidden">면</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure polygon"><em class="hidden">면</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure polygon"><em class="hidden">면</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                        <!--titleArea-->
+                        <div class="titleArea clearFix">
+                            <h4 class="titSub">선택된 레이어 목록</h4>
+                        </div>
+                        <!--//titleArea-->
+                        <!--table-->
+                        <div class="table layerResult mScroll" style="height:196px;">
+                            <table>
+                                <caption class="hidden">레이어 검색 결과</caption>
+                                <colgroup>
+                                    <col style="width:60px;" />
+                                    <col style="width:171px" />
+                                    <col style="width:321px" />
+                                    <col style="width:auto" />
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">종류</th>
+                                    <th scope="col">레이어명</th>
+                                    <th scope="col">레이어설명</th>
+                                    <th scope="col">추가/삭제</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><span class="figure polygon"><em class="hidden">면</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure point"><em class="hidden">점</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure polygon"><em class="hidden">면</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure line"><em class="hidden">선</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure text"><em class="hidden">텍스트</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure polygon"><em class="hidden">면</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure polygon"><em class="hidden">면</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="figure polygon"><em class="hidden">면</em></span></td>
+                                    <td>(금강) 건축 등 허가제한지역(UMU400)</td>
+                                    <td>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</td>
+                                    <td>
+                                        <button type="button" class="add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="remove"><span class="hidden">삭제</span></button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                        <div class="btnArea txt-center">
+                            <button type="button" class="lightGreyType">취소</button>
+                            <button type="button" class="blueType">추가</button>
+                        </div>
+                    </div>
+                    <!--//popupMain-->
+                </div>
+                <!--//popupPd(패딩영역)-->
+            </div>
+            <!--//popupMain-->
+        </div>
+        <!-- //popup -->
+
+        <!--popup-->
+        <div class="popup info" style="width:644px;left:57px;top:90px">
+            <!--popupHeader-->
+            <div class="popupHeader">
+                <h3>지도드림 상세정보</h3>
+                <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+            </div>
+            <!--//popupHeader-->
+            <!--popupMain-->
+            <div class="popupMain">
+                <!--tabContWrap-->
+                <div class="tabContWrap type2">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList clearFix">
+                            <li class="active">
+                                <a href="#">메타데이터</a>
+                            </li>
+                            <li>
+                                <a href="#">공유현황</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont active">
+                        <div class="popupPd">
+
+                            <!--box-->
+                            <div class="box clearFix">
+                                <div class="thumbArea">
+                                    <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                </div>
+                                <!--boxWrap-->
+                                <div class="boxWrap">
+                                    <div class="textArea clearFix">
+                                        <span class="tag greenType">부분공유</span>
+                                        <span class="tag greyType">비공유</span>
+                                        <span class="tag">전체공유</span>
+                                        <strong>Dw_개발제한</strong>
+                                        <p class="expBox">dw_개발제한구역추가 설명문구입니다.</p>
+                                        <p class="left"><span>최종수정일자</span><span class="bar">|</span><span class="date">2020-09-25</span></p>
+                                        <p class="right"><span>생성일자</span><span class="bar">|</span><span class="date">2020-09-25</span></p>
+                                    </div>
+                                    <div class="btnArea">
+                                        <button type="button" class="lightGreyType">삭제</button>
+                                        <button type="button" class="lightGreenType">수정</button>
+                                        <button type="button" class="blueType">지도보기</button>
+                                    </div>
+                                </div>
+                                <!--//boxWrap-->
+                            </div>
+                            <!--//box-->
+                            <div class="titleArea clearFix">
+                                <h4 class="titSub">파일데이터 정보</h4>
+                                <i class="right">※ 레이어 목록은 <span class="blue">기본 레이어를 제외한</span> 목록이 보여집니다.</i>
+                            </div>
+
+                            <!--table-->
+                            <div class="table" style="border-top:1px solid #dbdbdb;">
+                                <table>
+                                    <caption>파일데이터 정보</caption>
+                                    <colgroup>
+                                        <col style="width:50px;">
+                                        <col style="width:228px;">
+                                        <col style="width:50px;">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">레이어명</th>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">레이어명</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="txtLeft">신고 제목입니다.</td>
+                                        <td>2</td>
+                                        <td class="txtLeft">신고 제목입니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="txtLeft"></td>
+                                        <td>4</td>
+                                        <td class="txtLeft"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="txtLeft"></td>
+                                        <td>6</td>
+                                        <td class="txtLeft"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td class="txtLeft"></td>
+                                        <td>8</td>
+                                        <td class="txtLeft"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td class="txtLeft"></td>
+                                        <td>10</td>
+                                        <td class="txtLeft"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//table-->
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont">
+                        <div class="popupPd">
+
+                            <ul class="tabTable clearFix">
+                                <li class="active">
+                                    <a href="#">전체 <span class="blue">1</span>건</a>
+                                </li>
+                                <li>
+                                    <a href="#">기관 <span class="blue">5</span>건</a>
+                                </li>
+                                <li>
+                                    <a href="#">주소록 <span class="blue">5</span>건</a>
+                                </li>
+                                <li>
+                                    <a href="#">사용자 <span class="blue">5</span>건</a>
+                                </li>
+                            </ul>
+                            <!--table-->
+                            <div class="table" style="border-top:1px solid #dbdbdb;">
+                                <table>
+                                    <caption>공유 현황</caption>
+                                    <colgroup>
+                                        <col style="width:100px;">
+                                        <col style="width:auto">
+                                        <col style="width:98px;">
+                                        <col style="width:105ㅔㅌ">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">기관 / 주소록 명</th>
+                                        <th scope="col">사용자</th>
+                                        <th scope="col">공유 시작일자</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>국토교통부</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="noResult">검색자료가 없습니다. 다른 검색조건을 선택해주세요.</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//table-->
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+
+            </div>
+            <!--//popupMain-->
+        </div>
+        <!--//popup-->
+
+        <!--popup-->
+        <div class="popup info" style="width:644px;left:200px;top:90px">
+            <!--popupHeader-->
+            <div class="popupHeader">
+                <h3>지도드림 상세정보</h3>
+                <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+            </div>
+            <!--//popupHeader-->
+            <!--popupMain-->
+            <div class="popupMain">
+                <!--tabContWrap-->
+                <div class="tabContWrap type2">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList clearFix">
+                            <li class="active">
+                                <a href="#">메타데이터</a>
+                            </li>
+                            <li>
+                                <a href="#">공유현황</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont active">
+                        <div class="popupPd">
+
+                            <!--box-->
+                            <div class="box clearFix">
+                                <div class="thumbArea">
+                                    <img src="../images/common/bg-dummy-mapgallery.png" alt="지도 섬네일 이미지"/>
+                                </div>
+                                <!--boxWrap-->
+                                <div class="boxWrap">
+                                    <div class="textArea clearFix">
+                                        <span class="tag greenType">부분공유</span>
+                                        <span class="tag greyType">비공유</span>
+                                        <span class="tag">전체공유</span>
+                                        <div class="inputBox"><label class="label" for="title01">제목</label><input type="text" id="title01"></div>
+                                        <div class="inputBox"><label class="label for="desc">설명</label><textarea name="" id="desc" cols="30" rows="10"></textarea></div>
+                                        <p class="left"><span>최종수정일자</span><span class="bar">|</span><span class="date">2020-09-25</span></p>
+                                        <p class="right"><span>생성일자</span><span class="bar">|</span><span class="date">2020-09-25</span></p>
+                                    </div>
+                                    <div class="btnArea">
+                                        <button type="button" class="lightGreyType">삭제</button>
+                                        <button type="button" class="lightGreenType">수정</button>
+                                        <button type="button" class="blueType">지도보기</button>
+                                    </div>
+                                </div>
+                                <!--//boxWrap-->
+                            </div>
+                            <!--//box-->
+                            <div class="titleArea clearFix">
+                                <h4 class="titSub">파일데이터 정보</h4>
+                                <i class="right">※ 레이어 목록은 <span class="blue">기본 레이어를 제외한</span> 목록이 보여집니다.</i>
+                            </div>
+
+                            <!--table-->
+                            <div class="table" style="border-top:1px solid #dbdbdb;">
+                                <table>
+                                    <caption>파일데이터 정보</caption>
+                                    <colgroup>
+                                        <col style="width:50px;">
+                                        <col style="width:228px;">
+                                        <col style="width:50px;">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">레이어명</th>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">레이어명</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="txtLeft">신고 제목입니다.</td>
+                                        <td>2</td>
+                                        <td class="txtLeft">신고 제목입니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="txtLeft"></td>
+                                        <td>4</td>
+                                        <td class="txtLeft"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="txtLeft"></td>
+                                        <td>6</td>
+                                        <td class="txtLeft"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td class="txtLeft"></td>
+                                        <td>8</td>
+                                        <td class="txtLeft"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td class="txtLeft"></td>
+                                        <td>10</td>
+                                        <td class="txtLeft"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//table-->
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont">
+                        <div class="popupPd">
+
+                            <ul class="tabTable clearFix">
+                                <li class="active">
+                                    <a href="#">전체 <span class="blue">1</span>건</a>
+                                </li>
+                                <li>
+                                    <a href="#">기관 <span class="blue">5</span>건</a>
+                                </li>
+                                <li>
+                                    <a href="#">주소록 <span class="blue">5</span>건</a>
+                                </li>
+                                <li>
+                                    <a href="#">사용자 <span class="blue">5</span>건</a>
+                                </li>
+                            </ul>
+                            <!--table-->
+                            <div class="table" style="border-top:1px solid #dbdbdb;">
+                                <table>
+                                    <caption>공유 현황</caption>
+                                    <colgroup>
+                                        <col style="width:100px;">
+                                        <col style="width:auto">
+                                        <col style="width:98px;">
+                                        <col style="width:105ㅔㅌ">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">기관 / 주소록 명</th>
+                                        <th scope="col">사용자</th>
+                                        <th scope="col">공유 시작일자</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>국토교통부</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="noResult">검색자료가 없습니다. 다른 검색조건을 선택해주세요.</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//table-->
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+
+            </div>
+            <!--//popupMain-->
+        </div>
+        <!--//popup-->
+
+    </div>
+    <!--//container-->
+    @@include('include/footer.html')
+</div>
+<!--//wrap-->
+</body>
+</html>
